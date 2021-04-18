@@ -25,9 +25,9 @@
               <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item user-list__item--close users-links">
-              <a class="user-list__info users-links__info" href="tel:88005558628">
+          <ul class="main-nav__list users-links">
+            <li class="users-links__item">
+              <a class="users-links__info" href="tel:88005558628">
                 <div class="users-links__icons">
                   <svg class="users-links__icon users-links__icon--tel" width="17" height="15">
 
@@ -36,18 +36,9 @@
                 <span>8 800 555-86-28</span>
               </a>
             </li>
-            <li class="user-list__topmenu">
-              <a class="user-list__topmenu-links" href="tel:88005558628">
-                <div class="user-list__topmenu-icons user-list__topmenu-icons--tel">
-                  <svg class="user-list__topmenu-icon user-list__topmenu-icon--tel" width="15" height="16">
 
-                  </svg>
-                </div>
-              </a>
-            </li>
-
-            <li class="user-list__item user-list__item--close users-links">
-              <a class="user-list__info users-links__info" href="mailto:mail@htmlacademy.ru">
+            <li class="users-links__item">
+              <a class="users-links__info" href="mailto:mail@htmlacademy.ru">
                 <div class="users-links__icons">
                   <svg class="users-links__icon users-links__icon--mail" width="18" height="13">
 
@@ -56,18 +47,9 @@
                 <span>mail@htmlacademy.ru</span>
               </a>
             </li>
-            <li class="user-list__topmenu">
-              <a class="user-list__topmenu-links" href="mailto:mail@htmlacademy.ru">
-                <div class="user-list__topmenu-icons user-list__topmenu-icons--mail">
-                  <svg class="user-list__topmenu-icon user-list__topmenu-icon--mail" width="18" height="16">
 
-                  </svg>
-                </div>
-              </a>
-            </li>
-
-            <li class="user-list__item">
-              <a class="user-list__login js-login" href="login.html">
+            <li class="users-links__item">
+              <a class="users-links__login js-login" href="login.html">
                 Авторизация
               </a>
             </li>
@@ -105,6 +87,36 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">«Погнали» — поиск попутчиков</h1>
+
+      <section class="user-list">
+        <ul class="user-list">
+          <li class="user-list__topmenu">
+            <a class="user-list__topmenu-links" href="tel:88005558628">
+              <div class="user-list__topmenu-icons user-list__topmenu-icons--tel">
+                <svg class="user-list__topmenu-icon user-list__topmenu-icon--tel" width="15" height="16">
+
+                </svg>
+              </div>
+            </a>
+          </li>
+
+          <li class="user-list__topmenu">
+            <a class="user-list__topmenu-links" href="mailto:mail@htmlacademy.ru">
+              <div class="user-list__topmenu-icons user-list__topmenu-icons--mail">
+                <svg class="user-list__topmenu-icon user-list__topmenu-icon--mail" width="18" height="16">
+
+                </svg>
+              </div>
+            </a>
+          </li>
+
+          <li class="user-list__item">
+            <a class="user-list__login js-login" href="login.html">
+              Авторизация
+            </a>
+          </li>
+        </ul>
+      </section>
 
       <section class="information">
         <div class="information__wrapper">
@@ -391,7 +403,7 @@
           </form>
           <p class="invite-form__questions">Остались вопросы?<br> Мы с радостью на них ответим!</p>
           <div class="users-links">
-            <a class="invite-form__info users-links__info" href="tel:88005558628">
+            <a class="users-links__info" href="tel:88005558628">
               <article class="users-links__icons">
                 <svg class="users-links__icon users-links__icon--tel" width="17" height="15">
 
@@ -399,7 +411,7 @@
               </article>
               <span>8 800 555-86-28</span><br>
             </a>
-            <a class="invite-form__info users-links__info" href="mailto:mail@htmlacademy.ru">
+            <a class="users-links__info" href="mailto:mail@htmlacademy.ru">
               <article class="users-links__icons">
                 <svg class="users-links__icon users-links__icon--mail" width="18" height="13">
 
