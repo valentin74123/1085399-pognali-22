@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/96x15" alt="">
+        <img class="page-header__logo-img" src="https://via.placeholder.com/96x15" alt="Логотип «‎Погнали»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -15,71 +15,69 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="index.html">О сервисе</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Направления</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="">Попутчики</a>
+            <li class="site-list__item">
+              <a">Попутчики</a>
             </li>
           </ul>
+          <ul class="main-nav__list users-links">
+            <li class="users-links__item">
+              <a class="users-links__info" href="tel:88005558628">
+                <div class="users-links__icons">
+                  <svg class="users-links__icon users-links__icon--tel" width="17" height="15">
 
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item user-list__item--close users-links">
-              <a class="user-list__info users-links__info" href="tel:8 800 555-86-28">
-                <article class="users-links__icons">
-                  <img class="users-links__icon users-links__icon--tel" src="https://via.placeholder.com/17x15" alt="">
-                </article>
-                <span>8 800 555-86-28</span>
-              </a>
-            </li>
-            <li class="user-list__topmenu">
-              <a class="user-list__topmenu-links" href="tel:8 800 555-86-28">
-                <div class="user-list__topmenu-icons user-list__topmenu-icons--tel">
-                  <img class="user-list__topmenu-icon user-list__topmenu-icon--tel" src="https://via.placeholder.com/15x16" alt="">
+                  </svg>
                 </div>
+                <span>8 800 555-86-28</span>
               </a>
             </li>
 
-            <li class="user-list__item user-list__item--close users-links">
-              <a class="user-list__info users-links__info" href="">
-                <article class="users-links__icons">
-                  <img class="users-links__icon users-links__icon--mail" src="https://via.placeholder.com/18x13" alt="">
-                </article>
+            <li class="users-links__item">
+              <a class="users-links__info" href="mailto:mail@htmlacademy.ru">
+                <div class="users-links__icons">
+                  <svg class="users-links__icon users-links__icon--mail" width="18" height="13">
+
+                  </svg>
+                </div>
                 <span>mail@htmlacademy.ru</span>
               </a>
             </li>
-            <li class="user-list__topmenu">
-              <a class="user-list__topmenu-links" href="">
-                <div class="user-list__topmenu-icons user-list__topmenu-icons--mail">
-                  <img class="user-list__topmenu-icon user-list__topmenu-icon--mail" src="https://via.placeholder.com/18x16" alt="">
-                </div>
-              </a>
-            </li>
 
-            <li class="user-list__item">
-              <a class="user-list__login js-login" href="login.html">
-                <span>Авторизация</span>
+            <li class="users-links__item">
+              <a class="users-links__login js-login" href="login.html">
+                Авторизация
               </a>
             </li>
           </ul>
 
           <ul class="main-nav__list social-list">
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--facebook" href="">
-                Мы в Фейсбуке
+              <a class="social-list__link" href="">
+                <svg width="11" height="21">
+
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--vkontakte" href="">
-                Мы в Вконтакте
+              <a class="social-list__link" href="">
+                <svg width="23" height="12">
+
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--instagram" href="">
-                Мы в Инстаграме
+              <a class="social-list__link" href="">
+                <svg width="18" height="18">
+
+                </svg>
+                <span class="visually-hidden">Мы в Инстаграме</span>
               </a>
             </li>
           </ul>
@@ -88,20 +86,29 @@
     </header>
 
     <main class="page-main  page-main--catalog">
-      <div class="active-heading">
-        <article class="active-heading__item">
-          <h1 class="active-heading__title">Попутчики</h1>
+      <div class="page-heading">
+        <article class="page-heading__inner">
+          <h1 class="page-heading__title">Попутчики</h1>
         </article>
+        <a class="page-heading__to-main" href="index.html">На главную</a>
       </div>
 
       <section class="country-filter country-filter--opened country-filter--nojs">
         <div class="country-filter__wrapper">
           <h2 class="country-filter__title">Фильтрация по странам:</h2>
           <ul class="country-filter__list">
-            <li class="country-filter__item country-filter__item--active">Европа</li>
-            <li class="country-filter__item">Азия</li>
-            <li class="country-filter__item">Америка</li>
-            <li class="country-filter__item">Острова</li>
+            <li class="country-filter__item country-filter__item--active">
+              <a class="country-filter__country" href="">Европа</a>
+            </li>
+            <li class="country-filter__item">
+              <a class="country-filter__country" href="">Азия</a>
+            </li>
+            <li class="country-filter__item">
+              <a class="country-filter__country" href="">Америка</a>
+            </li>
+            <li class="country-filter__item">
+              <a class="country-filter__country" href="">Острова</a>
+            </li>
           </ul>
           <button class="country-filter__uncover" type="button">
             <span class="country-filter__uncover-text">Показать все</span>
@@ -112,88 +119,277 @@
           <section class="country-filter__countries countries">
             <table class="countries__table">
               <tr class="countries__row">
-                <td class="countries__letter countries__letter--active">А
-
+                <td class="countries__letter">
+                  <a class="countries__letter-link countries__letter-link--active" href="">А</a>
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Австралия</li>
+                    <li class="countries__item">Австрия</li>
+                    <li class="countries__item">Азербайджан</li>
+                    <li class="countries__item">Албания</li>
+                    <li class="countries__item">Алжир</li>
+                    <li class="countries__item">Ангола</li>
+                    <li class="countries__item">Андорра</li>
+                    <li class="countries__item">Антигуа и Барбуда</li>
+                    <li class="countries__item">Аргентина</li>
+                    <li class="countries__item">Армения</li>
+                    <li class="countries__item">Афганистан</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Б
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Багамские Острова</li>
+                    <li class="countries__item">Бангладеш</li>
+                    <li class="countries__item">Барбадос</li>
+                    <li class="countries__item">Бахрейн</li>
+                    <li class="countries__item">Белоруссия</li>
+                    <li class="countries__item">Белиз</li>
+                    <li class="countries__item">Бельгия</li>
+                    <li class="countries__item">Бенин</li>
+                    <li class="countries__item">Болгария</li>
+                    <li class="countries__item">Боливия</li>
+                    <li class="countries__item">Босния и Герцеговина</li>
+                    <li class="countries__item">Ботсвана</li>
+                    <li class="countries__item">Бразилия</li>
+                    <li class="countries__item">Бруней</li>
+                    <li class="countries__item">Буркина-Фасо</li>
+                    <li class="countries__item">Бурунди</li>
+                    <li class="countries__item">Бутан</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">В
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Вануату</li>
+                    <li class="countries__item">Великобритания</li>
+                    <li class="countries__item">Венгрия</li>
+                    <li class="countries__item">Венесуэла</li>
+                    <li class="countries__item">Восточный Тимор</li>
+                    <li class="countries__item">Вьетнам</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Г
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Габон</li>
+                    <li class="countries__item">Гаити</li>
+                    <li class="countries__item">Гайана</li>
+                    <li class="countries__item">Гамбия</li>
+                    <li class="countries__item">Гана</li>
+                    <li class="countries__item">Гватемала</li>
+                    <li class="countries__item">Гвинея</li>
+                    <li class="countries__item">Гвинея-Бисау</li>
+                    <li class="countries__item">Германия</li>
+                    <li class="countries__item">Гондурас</li>
+                    <li class="countries__item">Гренада</li>
+                    <li class="countries__item">Греция</li>
+                    <li class="countries__item">Грузия</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Д
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Дания</li>
+                    <li class="countries__item">Джибути</li>
+                    <li class="countries__item">Доминика</li>
+                    <li class="countries__item">Доминикана</li>
+                  </ul>
                 </td>
               </tr>
               <tr class="countries__row">
                 <td class="countries__letter">Е
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Египет</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">З
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Замбия</li>
+                    <li class="countries__item">Зимбабве</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">И
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Израиль</li>
+                    <li class="countries__item">Индия</li>
+                    <li class="countries__item">Индонезия</li>
+                    <li class="countries__item">Иордания</li>
+                    <li class="countries__item">Ирак</li>
+                    <li class="countries__item">Иран</li>
+                    <li class="countries__item">Ирландия</li>
+                    <li class="countries__item">Исландия</li>
+                    <li class="countries__item">Испания</li>
+                    <li class="countries__item">Италия</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">К
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Кабо-Верде</li>
+                    <li class="countries__item">Казахстан</li>
+                    <li class="countries__item">Камбоджа</li>
+                    <li class="countries__item">Камерун</li>
+                    <li class="countries__item">Канада</li>
+                    <li class="countries__item">Катар</li>
+                    <li class="countries__item">Кения</li>
+                    <li class="countries__item">Кипр</li>
+                    <li class="countries__item">Киргизия</li>
+                    <li class="countries__item">Кирибати</li>
+                    <li class="countries__item">Китай</li>
+                    <li class="countries__item">Колумбия</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Л
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Лаос</li>
+                    <li class="countries__item">Латвия</li>
+                    <li class="countries__item">Лесото</li>
+                    <li class="countries__item">Либерия</li>
+                    <li class="countries__item">Ливан</li>
+                    <li class="countries__item">Ливия</li>
+                    <li class="countries__item">Литва</li>
+                    <li class="countries__item">Лихтенштейн</li>
+                    <li class="countries__item">Люксембург</li>
+                  </ul>
                 </td>
               </tr>
               <tr class="countries__row">
                 <td class="countries__letter">М
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Маврикий</li>
+                    <li class="countries__item">Мавритания</li>
+                    <li class="countries__item">Мадагаскар</li>
+                    <li class="countries__item">Малави</li>
+                    <li class="countries__item">Малайзия</li>
+                    <li class="countries__item">Мали</li>
+                    <li class="countries__item">Мальдивы</li>
+                    <li class="countries__item">Мальта</li>
+                    <li class="countries__item">Марокко</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Н
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Намибия</li>
+                    <li class="countries__item">Науру</li>
+                    <li class="countries__item">Непал</li>
+                    <li class="countries__item">Нигер</li>
+                    <li class="countries__item">Нигерия</li>
+                    <li class="countries__item">Нидерланды</li>
+                    <li class="countries__item">Никарагуа</li>
+                    <li class="countries__item">Новая Зеландия</li>
+                    <li class="countries__item">Норвегия</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">О
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">ОАЭ</li>
+                    <li class="countries__item">Оман</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">П
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Пакистан</li>
+                    <li class="countries__item">Палау</li>
+                    <li class="countries__item">Панама</li>
+                    <li class="countries__item">Папуа - Новая Гвинея</li>
+                    <li class="countries__item">Парагвай</li>
+                    <li class="countries__item">Перу</li>
+                    <li class="countries__item">Польша</li>
+                    <li class="countries__item">Португалия</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Р
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Руанда</li>
+                    <li class="countries__item">Румыния</li>
+                    <li class="countries__item">Россия</li>
+                  </ul>
                 </td>
               </tr>
               <tr class="countries__row">
                 <td class="countries__letter">С
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Сальвадор</li>
+                    <li class="countries__item">Самоа</li>
+                    <li class="countries__item">Сан-Марино</li>
+                    <li class="countries__item">Саудовская Аравия</li>
+                    <li class="countries__item">Сейшелы</li>
+                    <li class="countries__item">Сенегал</li>
+                    <li class="countries__item">Сербия</li>
+                    <li class="countries__item">Сингапур</li>
+                    <li class="countries__item">Сирия</li>
+                    <li class="countries__item">Словакия</li>
+                    <li class="countries__item">Словения</li>
+                    <li class="countries__item">США</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Т
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Таджикистан</li>
+                    <li class="countries__item">Таиланд</li>
+                    <li class="countries__item">Танзания</li>
+                    <li class="countries__item">Того</li>
+                    <li class="countries__item">Тонга</li>
+                    <li class="countries__item">Тринидад и Тобаго</li>
+                    <li class="countries__item">Тувалу</li>
+                    <li class="countries__item">Тунис</li>
+                    <li class="countries__item">Туркмения</li>
+                    <li class="countries__item">Турция</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">У
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Уганда</li>
+                    <li class="countries__item">Узбекистан</li>
+                    <li class="countries__item">Украина</li>
+                    <li class="countries__item">Уругвай</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Ф
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Фиджи</li>
+                    <li class="countries__item">Филиппины</li>
+                    <li class="countries__item">Финляндия</li>
+                    <li class="countries__item">Франция</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Х
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Хорватия</li>
+                  </ul>
                 </td>
               </tr>
               <tr class="countries__row">
                 <td class="countries__letter">Ч
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Чад</li>
+                    <li class="countries__item">Черногория</li>
+                    <li class="countries__item">Чехия</li>
+                    <li class="countries__item">Чили</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Ш
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Швейцария</li>
+                    <li class="countries__item">Швеция</li>
+                    <li class="countries__item">Шри-Ланка</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Э
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Эквадор</li>
+                    <li class="countries__item">Эритрея</li>
+                    <li class="countries__item">Эсватини</li>
+                    <li class="countries__item">Эстония</li>
+                    <li class="countries__item">Эфиопия</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Ю
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">ЮАР</li>
+                    <li class="countries__item">Южный Судан</li>
+                  </ul>
                 </td>
                 <td class="countries__letter">Я
-
+                  <ul class="countries__list-table">
+                    <li class="countries__item">Ямайка</li>
+                    <li class="countries__item">Япония</li>
+                  </ul>
                 </td>
               </tr>
             </table>
@@ -213,7 +409,7 @@
             </ul>
           </section>
           <button class="country-filter__button button-catalog button-catalog--collapse" type="button">
-            <span class="country-filter__button-text">Свернуть</span>
+            Свернуть
           </button>
         </div>
       </section>
@@ -224,25 +420,47 @@
           <form class="find-traveler__form" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="find-traveler__fieldset">
               <div class="find-traveler__fieldset-wrapper">
-                <article class="find-traveler__item-wrapper">
+                <div class="find-traveler__item-wrapper">
                   <p class="find-traveler__item">Хобби</p>
                   <button class="find-traveler__uncover" type="button">
                     <span class="visually-hidden">Раскрыть фильтр</span>
-                    <img src="https://via.placeholder.com/10x6" alt="">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="6" x="0px" y="0px"
+                      viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                      <polygon points="5,5 0,0 10,0 "/>
+                    </svg>
                   </button>
-                </article>
+                </div>
+
+                <ul class="find-traveler__list list-catalog list-catalog--hobby">
+                  <li class="list-catalog__item">
+                    <input class="list-catalog__checkbox" type="checkbox" id="filter-gym" name="gym" checked>
+                    <label class="list-catalog__description" for="filter-gym">Спортзал</label>
+                  </li>
+                  <li class="list-catalog__item">
+                    <input class="list-catalog__checkbox" type="checkbox" id="filter-hookah" name="hookah">
+                    <label class="list-catalog__description" for="filter-hookah">Кальян</label>
+                  </li>
+                  <li class="list-catalog__item">
+                    <input class="list-catalog__checkbox" type="checkbox" id="filter-sofa" name="sofa">
+                    <label class="list-catalog__description" for="filter-sofa">Диван</label>
+                  </li>
+                </ul>
               </div>
             </fieldset>
 
             <fieldset class="find-traveler__fieldset">
               <div class="find-traveler__fieldset-wrapper">
-                <article class="find-traveler__item-wrapper">
+                <div class="find-traveler__item-wrapper">
                   <p class="find-traveler__item">Музыка</p>
                   <button class="find-traveler__uncover find-traveler__uncover--active" type="button">
                     <span class="visually-hidden">Раскрыть фильтр</span>
-                    <img src="https://via.placeholder.com/10x6" alt="">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="6" x="0px" y="0px"
+                      viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                      <polygon points="5,5 0,0 10,0 "/>
+                    </svg>
                   </button>
-                </article>
+                </div>
+
                 <ul class="find-traveler__list list-catalog list-catalog--music">
                   <li class="list-catalog__item">
                     <input class="list-catalog__checkbox" type="checkbox" id="filter-rock" name="rock" checked>
@@ -262,48 +480,70 @@
 
             <fieldset class="find-traveler__fieldset">
               <div class="find-traveler__fieldset-wrapper">
-                <article class="find-traveler__item-wrapper">
+                <div class="find-traveler__item-wrapper">
                   <p class="find-traveler__item">Еда</p>
                   <button class="find-traveler__uncover" type="button">
                     <span class="visually-hidden">Раскрыть фильтр</span>
-                    <img src="https://via.placeholder.com/10x6" alt="">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="6" x="0px" y="0px"
+                      viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                      <polygon points="5,5 0,0 10,0 "/>
+                    </svg>
                   </button>
-                </article>
+                </div>
+
+                <ul class="find-traveler__list list-catalog list-catalog--eat">
+                  <li class="list-catalog__item">
+                    <input class="list-catalog__checkbox" type="checkbox" id="filter-meat" name="meat" checked>
+                    <label class="list-catalog__description" for="filter-meat">Мясоед</label>
+                  </li>
+                  <li class="list-catalog__item">
+                    <input class="list-catalog__checkbox" type="checkbox" id="filter-healthy-eat" name="healthy-eat">
+                    <label class="list-catalog__description" for="filter-healthy-eat">Сидит на ПП</label>
+                  </li>
+                  <li class="list-catalog__item">
+                    <input class="list-catalog__checkbox" type="checkbox" id="filter-vegan" name="vegan">
+                    <label class="list-catalog__description" for="filter-vegan">Веган-сыроед</label>
+                  </li>
+                </ul>
               </div>
             </fieldset>
 
             <fieldset class="find-traveler__fieldset">
               <div class="find-traveler__fieldset-wrapper">
-                <article class="find-traveler__item-wrapper">
+                <div class="find-traveler__item-wrapper">
                   <p class="find-traveler__item">Транспорт</p>
                   <button class="find-traveler__uncover find-traveler__uncover--active" type="button">
                     <span class="visually-hidden">Раскрыть фильтр</span>
-                    <img src="https://via.placeholder.com/10x6" alt="">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="6" x="0px" y="0px"
+                      viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                      <polygon points="5,5 0,0 10,0 "/>
+                    </svg>
                   </button>
-                </article>
+                </div>
+
                 <ul class="find-traveler__list  find-traveler__list-transports transports">
                   <li class="transports__item">
-                    <input class="transports__checkbox" type="checkbox" id="plane" name="plane" checked>
-                    <label class="transports__description transports__description--catalog transports__description--plane" for="plane">
-                      <img class="transports__icon-plane transports__icon-plane--active" src="https://via.placeholder.com/23x24" alt="" width="23" height="24">
+                    <input class="visually-hidden transports__checkbox" type="checkbox" id="plane" name="plane" checked>
+                    <label class="transports__description transports__description--plane" for="plane">
+                      <span class="visually-hidden">Авиаперелет</span>
                     </label>
                   </li>
                   <li class="transports__item">
-                    <input class="transports__checkbox" type="checkbox" id="car" name="car" checked>
-                    <label class="transports__description transports__description--catalog transports__description--car" for="car">
-                      <img class="transports__icon-car transports__icon-car--active" src="https://via.placeholder.com/23x24" alt="" width="23" height="24">
+                    <input class="visually-hidden transports__checkbox" type="checkbox" id="car" name="car" checked>
+                    <label class="transports__description transports__description--car" for="car">
+                      <span class="visually-hidden">Автотранспорт</span>
                     </label>
                   </li>
                   <li class="transports__item">
-                    <input class="transports__checkbox" type="checkbox" id="bicycle" name="bicycle">
-                    <label class="transports__description transports__description--catalog transports__description--bicycle" for="bicycle">
-                      <img class="transports__icon-bicycle" src="https://via.placeholder.com/23x24" alt="" width="23" height="24">
+                    <input class="visually-hidden transports__checkbox" type="checkbox" id="bicycle" name="bicycle">
+                    <label class="transports__description transports__description--bicycle" for="bicycle">
+                      <span class="visually-hidden">Велосипед</span>
                     </label>
                   </li>
                   <li class="transports__item">
-                    <input class="transports__checkbox" type="checkbox" id="afoot" name="afoot" checked>
-                    <label class="transports__description transports__description--catalog transports__description--afoot" for="afoot">
-                      <img class="transports__icon-afoot transports__icon-afoot--active" src="https://via.placeholder.com/23x24" alt="" width="23" height="24">
+                    <input class="visually-hidden transports__checkbox" type="checkbox" id="afoot" name="afoot" checked>
+                    <label class="transports__description transports__description--afoot" for="afoot">
+                      <span class="visually-hidden">Пешком</span>
                     </label>
                   </li>
                 </ul>
@@ -312,20 +552,24 @@
 
             <fieldset class="find-traveler__fieldset find-traveler__fieldset--level">
               <div class="find-traveler__fieldset-wrapper">
-                <article class="find-traveler__item-wrapper">
+                <div class="find-traveler__item-wrapper">
                   <p class="find-traveler__item">Левел<span>:</span></p>
                   <button class="find-traveler__uncover find-traveler__uncover--active" type="button">
                     <span class="visually-hidden">Раскрыть фильтр</span>
-                    <img src="https://via.placeholder.com/10x6" alt="">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="6" x="0px" y="0px"
+                      viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                      <polygon points="5,5 0,0 10,0 "/>
+                    </svg>
                   </button>
-                </article>
+                </div>
+
                 <div class="find-traveler__range-filter range-filter">
                   <div class="range-filter__price-controls range-filter__price-controls--min-max">
-                    <div class="range-filter__min">
+                    <div class="range-filter__number range-filter__number--min">
                       <label class="range-filter__min-cost" for="min-cost"></label>
                       <input type="number" id="min-cost" name="min-cost" value="30">
                     </div>
-                    <div class="range-filter__max">
+                    <div class="range-filter__number range-filter__number--max">
                       <label class="range-filter__max-cost" for="max-cost"></label>
                       <input type="number" id="max-cost" name="max-cost" value="100">
                     </div>
@@ -380,27 +624,35 @@
               </ul>
 
               <p class="travelers-profile__description travelers-profile__description--transport">транспорт:</p>
-              <ul class="travelers-profile__transpotrs-list">
+              <ul class="travelers-profile__transpotrs-list transport-icons">
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon travelers-profile__icon--active" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon transport-icons__icon--active" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--plane">
                     Авиаперелет
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bus">
                     Автотранспорт
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bike">
                     Велосипед
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--run">
                     Пешком
                   </div>
@@ -409,15 +661,15 @@
 
               <p class="travelers-profile__description travelers-profile__description--level">левел:</p>
               <div class="travelers-profile__level">
-                <svg width="65" height="65">
-                  <circle class="travelers-profile__circle travelers-profile__circle--frisova"
-                    r="22" cx="24" cy="24" fill="transparent" stroke="#FF8D30" stroke-width="4"
-                  />
-                </svg>
-                <article class="travelers-profile__level-text">
-                  <p class="travelers-profile__number">99</p>
-                  <p class="travelers-profile__text">level</p>
-                </article>
+                <div class="level">
+                  <svg width="65" height="65">
+                    <circle class="level__circle level__circle--frisova" r="22" cx="24" cy="24" fill="transparent" stroke="#FF8D30" stroke-width="4"/>
+                  </svg>
+                  <div class="level__info">
+                    <p class="level__number">99</p>
+                    <p class="level__text">level</p>
+                  </div>
+                </div>
               </div>
 
               <button class="travelers-profile__button button-catalog button-catalog--call">Позвать!</button>
@@ -446,27 +698,35 @@
               </ul>
 
               <p class="travelers-profile__description travelers-profile__description--transport">транспорт:</p>
-              <ul class="travelers-profile__transpotrs-list">
+              <ul class="travelers-profile__transpotrs-list transport-icons">
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon travelers-profile__icon--active" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon transport-icons__icon--active" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--plane">
                     Авиаперелет
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon travelers-profile__icon--active" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon transport-icons__icon--active" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bus">
                     Автотранспорт
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bike">
                     Велосипед
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon travelers-profile__icon--active" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon transport-icons__icon--active" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--run">
                     Пешком
                   </div>
@@ -475,13 +735,15 @@
 
               <p class="travelers-profile__description travelers-profile__description--level">левел:</p>
               <div class="travelers-profile__level">
-                <svg width="65" height="65">
-                  <circle class="travelers-profile__circle travelers-profile__circle--demin" r="22" cx="24" cy="24" fill="transparent" stroke="#FF8D30" stroke-width="4"/>
-                </svg>
-                <article class="travelers-profile__level-text">
-                  <p class="travelers-profile__number">80</p>
-                  <p class="travelers-profile__text">level</p>
-                </article>
+                <div class="level">
+                  <svg width="65" height="65">
+                    <circle class="level__circle level__circle--demin" r="22" cx="24" cy="24" fill="transparent" stroke="#FF8D30" stroke-width="4"/>
+                  </svg>
+                  <div class="level__info">
+                    <p class="level__number">80</p>
+                    <p class="level__text">level</p>
+                  </div>
+                </div>
               </div>
 
               <button class="travelers-profile__button button-catalog button-catalog--call">Позвать!</button>
@@ -513,27 +775,35 @@
               </ul>
 
               <p class="travelers-profile__description travelers-profile__description--transport">транспорт:</p>
-              <ul class="travelers-profile__transpotrs-list">
+              <ul class="travelers-profile__transpotrs-list transport-icons">
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon travelers-profile__icon--active" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon transport-icons__icon--active" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--plane">
                     Авиаперелет
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bus">
                     Автотранспорт
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon travelers-profile__icon--active" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon transport-icons__icon--active" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bike">
                     Велосипед
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--run">
                     Пешком
                   </div>
@@ -542,13 +812,15 @@
 
               <p class="travelers-profile__description travelers-profile__description--level">левел:</p>
               <div class="travelers-profile__level">
-                <svg width="65" height="65">
-                  <circle class="travelers-profile__circle travelers-profile__circle--smolov" r="22" cx="24" cy="24" fill="transparent" stroke="#FF8D30" stroke-width="4"/>
-                </svg>
-                <article class="travelers-profile__level-text">
-                  <p class="travelers-profile__number">25</p>
-                  <p class="travelers-profile__text">level</p>
-                </article>
+                <div class="level">
+                  <svg width="65" height="65">
+                    <circle class="level__circle level__circle--smolov" r="22" cx="24" cy="24" fill="transparent" stroke="#FF8D30" stroke-width="4"/>
+                  </svg>
+                  <div class="level__info">
+                    <p class="level__number">25</p>
+                    <p class="level__text">level</p>
+                  </div>
+                </div>
               </div>
 
               <button class="travelers-profile__button button-catalog button-catalog--call">Позвать!</button>
@@ -577,27 +849,35 @@
               </ul>
 
               <p class="travelers-profile__description travelers-profile__description--transport">транспорт:</p>
-              <ul class="travelers-profile__transpotrs-list">
+              <ul class="travelers-profile__transpotrs-list transport-icons">
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon travelers-profile__icon--active" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon transport-icons__icon--active" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--plane">
                     Авиаперелет
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon travelers-profile__icon--active" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon transport-icons__icon--active" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bus">
                     Автотранспорт
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bike">
                     Велосипед
                   </div>
                 </li>
                 <li class="travelers-profile__transpotrs-item transpotrs-hover">
-                  <img class="travelers-profile__icon" src="https://via.placeholder.com/14x16" alt="">
+                  <svg class="transport-icons__icon" width="14" height="16">
+
+                  </svg>
                   <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--run">
                     Пешком
                   </div>
@@ -606,15 +886,15 @@
 
               <p class="travelers-profile__description travelers-profile__description--level">левел:</p>
               <div class="travelers-profile__level">
-                <svg class="ravelers-profile__svg-circle" width="65" height="65">
-                  <circle class="travelers-profile__circle travelers-profile__circle--rogovaya"
-                    r="22" cx="24" cy="24" fill="transparent" stroke="#FF8D30" stroke-width="4"
-                  />
-                </svg>
-                <article class="travelers-profile__level-text">
-                  <p class="travelers-profile__number">50</p>
-                  <p class="travelers-profile__text">level</p>
-                </article>
+                <div class="level">
+                  <svg width="65" height="65">
+                    <circle class="level__circle level__circle--rogovaya" r="22" cx="24" cy="24" fill="transparent" stroke="#FF8D30" stroke-width="4"/>
+                  </svg>
+                  <div class="level__info">
+                    <p class="level__number">50</p>
+                    <p class="level__text">level</p>
+                  </div>
+                </div>
               </div>
 
               <button class="travelers-profile__button button-catalog button-catalog--call">Позвать!</button>
@@ -624,23 +904,47 @@
           <article class="travelers-profiles__yet">
             <a class="travelers-profiles__yet-botton button-catalog button-catalog--yet" href="">Показать еще</a>
           </article>
-          <div class="pages__buttons">
-            <button class="pages__button" type="button">
-              <span class="visually-hidden">Предыдущий профиль</span>
-              <img class="travelers-profile__icon" src="https://via.placeholder.com/13x20" alt="">
-            </button>
-            <button class="pages__button" type="button">
-              <span class="visually-hidden"> Следующий профиль</span>
-              <img class="travelers-profile__icon" src="https://via.placeholder.com/13x20" alt="">
-            </button>
+
+          <div class="travelers-profiles__pages pages">
+            <ul class="pages__list">
+              <li class="pages__item pages__item--active">
+                <a class="pages__number" href="">1</a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__number" href="">2</a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__number" href="">3</a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__number" href="">4</a>
+              </li>
+            </ul>
+
+            <div class="pages__buttons">
+              <button class="pages__button" type="button">
+                <span class="visually-hidden">Предыдущий профиль</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="20" x="0px" y="0px"
+                  viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                  <polygon points="0,7.1 10,0.1 10,14 "/>
+                </svg>
+              </button>
+              <button class="pages__button" type="button">
+                <span class="visually-hidden"> Следующий профиль</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="20" x="0px" y="0px"
+                  viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                  <polygon points="0,14 0,0.1 10,7.1 "/>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer page-footer--catalog">
+    <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="map__img" src="https://via.placeholder.com/96x15" alt="">
+        <img class="page-footer__logo-img" src="https://via.placeholder.com/96x15" alt="Логотип «‎Погнали»">
       </a>
 
       <div class="page-footer__social social">
@@ -656,7 +960,6 @@
           </li>
         </ul>
       </div>
-
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
