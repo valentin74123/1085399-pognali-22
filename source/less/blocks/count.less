@@ -1,0 +1,70 @@
+.count {
+  justify-content: space-between;
+
+  align-items: center;
+
+  box-sizing: border-box;
+  border: 1px solid @ligh-gray3;
+  border-radius: 4px;
+
+  position: relative;
+
+  &:hover,
+  &:focus {
+    border: 1px solid @dark-gray3;
+  }
+
+  &:active {
+    border: 1px solid @blue;
+  }
+}
+
+.count__button {
+  border: none;
+  background-color: transparent;
+
+  position: absolute;
+  margin: 0 14px;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--min {
+    left: 0;
+  }
+
+  &--max {
+    right: 0;
+  }
+}
+
+.count__print {
+  fill: rgba(@ligh-gray3);
+
+  &:hover,
+  &:focus {
+    fill: rgba(@dark-gray3);
+  }
+
+  &:active {
+    fill: rgba(@blue);
+  }
+}
+
+.count__number {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: @blue2;
+  text-transform: uppercase;
+
+  width: 180px;
+  text-align: center;
+  border: none;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

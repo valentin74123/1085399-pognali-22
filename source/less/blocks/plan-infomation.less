@@ -1,0 +1,52 @@
+.plan-infomation {
+  background-color: @white;
+  padding: 24px 104px 24px 23px;
+}
+
+.plan-infomation__cities {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: @blue3;
+  margin-bottom: 20px;
+  margin-left: 18px;
+
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "1.";
+    width: 13px;
+    height: 16px;
+    left: -18px;
+    font-weight: 500;
+  }
+
+  &--number::before {
+    content: "2.";
+  }
+}
+
+.plan-infomation__people,
+.plan-infomation__dates {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: @blue3;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.plan-infomation__people {
+  margin-bottom: 5px;
+}
+
+.plan-infomation__dates {
+  margin-bottom: 24px;
+}
+
+.plan-infomation__button {
+  padding: 0;
+}

@@ -9,44 +9,85 @@
   &--demin {
     stroke-dasharray: 170 30;
   }
+
+  &--form {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 210 40;
+  }
 }
 
 .level {
-  z-index: 1;
+  &--index {
+    z-index: 1;
 
-  top: 80px;
-  left: 5%;
-  width: 60px;
-  height: 60px;
-  background: rgba(@black, 0.6);
-  position: relative;
-  border-radius: 50%;
+    top: 80px;
+    left: 5%;
+    width: 60px;
+    height: 60px;
+    background: rgba(@black, 0.6);
+    position: relative;
+    border-radius: 50%;
+  }
 }
 
 .level__info {
-  margin-top: -70px;
+  &--index {
+    margin-top: -70px;
+  }
+
+  &--form {
+    margin-top: -100px;
+  }
 }
 
 .level__number {
-  font-size: 24px;
-  line-height: 24px;
   font-weight: bold;
-  color: @white;
   text-align: center;
   margin: 0 auto;
-  margin-top: 10px;
-  width: 30px;
-  padding-bottom: 3px;
-  margin-bottom: 3px;
-  border-bottom: 1px solid rgba(@white, 0.3);
+
+  &--index {
+    font-size: 24px;
+    line-height: 24px;
+    color: @white;
+
+    margin-top: 10px;
+    width: 30px;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid rgba(@white, 0.3);
+  }
+
+  &--form {
+    font-size: 38px;
+    line-height: 38px;
+    color: @blue;
+
+    margin-top: 15px;
+    width: 50px;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid rgba(@dark-gray, 0.3);
+  }
 }
 
 .level__text {
-  font-size: 14px;
-  line-height: 14px;
   font-weight: normal;
-  color: @white;
   text-align: center;
   margin: 0 auto;
-  width: 30px;
+
+  &--index {
+    font-size: 14px;
+    line-height: 14px;
+    color: @white;
+
+    width: 30px;
+  }
+
+  &--form {
+    font-size: 18px;
+    line-height: 18px;
+    color: @dark-gray;
+
+    width: 50px;
+  }
 }

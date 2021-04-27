@@ -1,0 +1,52 @@
+.countries__select {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: @blue3;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 11px 7px 11px 11px;
+  border-radius: 4px;
+  border: 1px solid @ligh-gray3;
+  width: 100%;
+
+  appearance: none;
+  background: url("");
+  background-size: 16px 11px;
+}
+
+.countries__flags {
+  position: relative;
+  border: 1px solid @ligh-gray3;
+  padding: 9px;
+  border-radius: 4px;
+  width: 35px;
+  height: 24px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: 50px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: @blue2;
+  }
+}
+
+.countries__button-close {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background: url("");
+
+  border-radius: 50%;
+  filter: opacity(1);
+  background-color: @light-gray;
+}

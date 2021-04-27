@@ -1,0 +1,54 @@
+.months {
+  border-bottom: 1px solid @gray2;
+  border-top: 1px solid @gray2;
+  padding: 11px 0;
+  min-height: 22px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.months__month {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+
+  color: @blue2;
+  text-align: center;
+  margin: 0;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.months__button {
+  background-color: inherit;
+  border: none;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+
+  & path {
+    fill: rgba(@black, 0.3);
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: rgba(@black, 0.5);
+  }
+
+  &:active path {
+    fill: rgba(@black, 0.1);
+  }
+}
