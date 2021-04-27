@@ -1,0 +1,52 @@
+.level__circle {
+
+  stroke-dashoffset: 65;
+
+  &--frisova {
+    stroke-dasharray: 195 5;
+  }
+
+  &--demin {
+    stroke-dasharray: 170 30;
+  }
+}
+
+.level {
+  z-index: 1;
+
+  top: 80px;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  background: rgba(@black, 0.6);
+  position: relative;
+  border-radius: 50%;
+}
+
+.level__info {
+  margin-top: -70px;
+}
+
+.level__number {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @white;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 30px;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid rgba(@white, 0.3);
+}
+
+.level__text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  color: @white;
+  text-align: center;
+  margin: 0 auto;
+  width: 30px;
+}

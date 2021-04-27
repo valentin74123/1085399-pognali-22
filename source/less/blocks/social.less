@@ -1,0 +1,23 @@
+.social__list {
+  .list();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.social__item {
+  background-color: @yellow;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+
+  &:hover,
+  &:focus {
+    background-color: @yellow-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

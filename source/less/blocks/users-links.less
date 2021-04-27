@@ -1,0 +1,67 @@
+.users-links {
+  margin-bottom: 40px;
+}
+
+.users-links__info {
+  .text();
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--main-nav {
+    color: @blue3;
+    font-size: 16px;
+    line-height: 18px;
+
+    &:hover,
+    &:focus {
+      color: rgba(@blue3, 0.7);
+    }
+
+    &:active {
+      color: rgba(@blue3, 0.3);
+    }
+  }
+
+  &--form {
+    color: @yellow;
+    font-size: 16px;
+    line-height: 18px;
+
+    &:hover,
+    &:focus {
+      color: @yellow-dark;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.users-links__login {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  color: @blue;
+
+  display: block;
+  width: auto;
+  text-align: center;
+  text-transform: uppercase;
+
+  padding: 10px 20px;
+  background-color: @yellow;
+  border-radius: 25px;
+  margin-bottom: 50px;
+
+  &:hover,
+  &:focus {
+    background-color: @yellow-dark;
+  }
+
+  &:active {
+    color: rgba(@blue, 0.3);
+  }
+}

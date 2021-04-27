@@ -1,0 +1,55 @@
+.user-list {
+  .list();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.user-list__topmenu-icons {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  &--tel {
+    background-color: @orange;
+
+    &:hover,
+    &:focus {
+      background-color: @dark-orange2;
+    }
+  }
+
+  &--mail {
+    background-color: @yellow-dark;
+
+    &:hover,
+    &:focus {
+      background-color: @orange;
+    }
+  }
+}
+
+.user-list__login {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: @blue;
+
+  padding: 10px 40px;
+  background-color: @yellow;
+  border-radius: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 140px;
+
+  &:hover,
+  &:focus {
+    background-color: @yellow-dark;
+  }
+
+  &:active {
+    color: rgba(@blue, 0.3);
+  }
+}

@@ -1,0 +1,54 @@
+.button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: @blue2;
+
+  display: flex;
+  margin: 0 auto;
+  padding: 23px 22px;
+  background-color: @yellow;
+  border-radius: 10px;
+
+  &--yellow {
+    &:hover,
+    &:focus {
+      background-color: @yellow-dark;
+    }
+
+    &:active {
+      color: rgba(@blue3, 0.3);
+    }
+  }
+
+  &--route {
+    border: 3px solid @blue2;
+
+    &:hover,
+    &:focus {
+      background-color: @blue2;
+      color: @white;
+    }
+
+    &:active {
+      color: rgba(@white, 0.3);
+    }
+  }
+
+  &--reg {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: @blue3;
+
+    &:hover,
+    &:focus {
+      background-color: @yellow-dark;
+    }
+
+    &:active {
+      color: rgba(@blue3, 0.3);
+    }
+  }
+}
