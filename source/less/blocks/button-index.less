@@ -1,0 +1,44 @@
+.button-index {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: @blue2;
+
+  background-color: @yellow;
+  border-radius: 10px;
+
+  display: block;
+  width: auto;
+  padding: 22px 20px;
+
+  &:hover,
+  &:focus {
+    background-color: @yellow-dark;
+  }
+
+  &:active {
+    color: rgba(@blue3, 0.3);
+  }
+
+  &--reg {
+    font-size: 24px;
+    line-height: 24px;
+    color: @blue3;
+    border-radius: 15px;
+  }
+
+  &--route {
+    border: 3px solid @blue2;
+
+    &:hover,
+    &:focus {
+      background-color: @blue2;
+      color: @white;
+    }
+
+    &:active {
+      color: rgba(@white, 0.3);
+    }
+  }
+}
