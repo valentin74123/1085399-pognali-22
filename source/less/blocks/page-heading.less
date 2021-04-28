@@ -1,0 +1,30 @@
+.page-heading {
+  background-color: @dark-blue2;
+}
+
+.page-heading__inner {
+  padding-top: 95px;
+}
+
+.page-heading__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: @white;
+
+  padding-bottom: 10px;
+  border-radius: 4px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 44px;
+    width: 214px;
+    height: 5px;
+    background-color: @orange;
+    border-radius: 4px;
+  }
+}

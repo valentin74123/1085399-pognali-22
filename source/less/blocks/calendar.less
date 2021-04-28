@@ -1,0 +1,66 @@
+.calendar {
+  min-height: 215px;
+  min-width: 221px;
+  border-collapse: collapse;
+  margin-bottom: 22px;
+}
+
+.calendar__day {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: @dark-gray;
+  text-align: center;
+
+  &--red {
+    color: @dark-orange;
+  }
+
+  & span {
+    display: none;
+  }
+}
+
+.calendar__date {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: @dark-gray;
+  background-color: @light-gray;
+  text-align: center;
+  border: 1px solid @gray2;
+  cursor: pointer;
+
+  &--disabled {
+    opacity: 0.3;
+    font-weight: normal;
+  }
+
+  &:hover,
+  &:focus {
+    color: @white;
+    background-color: @blue3;
+    outline: 4px solid @dark-orange;
+    outline-offset: -4px;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &--hover {
+    color: @white;
+    background-color: @blue3;
+    outline: 4px solid @dark-orange;
+    outline-offset: -4px;
+  }
+
+  &--active {
+    color: @white;
+    background-color: @blue3;
+  }
+}
+
+.calendar__input[type="checkbox"] {
+  display: none;
+}
