@@ -1,0 +1,96 @@
+.travelers-profile {
+  background-color: @white;
+  padding-top: 15px;
+  padding-bottom: 23px;
+}
+
+.travelers-profile__avatar {
+  border-radius: 50px;
+}
+
+.travelers-profile__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: @blue2;
+
+  max-width: 78px;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 140px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: @light-red;
+  }
+
+  &--online::before {
+    background-color: @green;
+  }
+}
+
+.travelers-profile__distance {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: @blue;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.travelers-profile__hashtags {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: @dark-gray;
+  max-width: 176px;
+  margin-bottom: 19px;
+}
+
+.travelers-profile__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+
+  color: @dark-gray;
+  margin-bottom: 18px;
+}
+
+.travelers-profile__list {
+  .list();
+  margin-bottom: 18px;
+}
+
+.travelers-profile__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+
+  color: @blue2;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.travelers-profile__level {
+  margin-bottom: 13px;
+}

@@ -1,0 +1,26 @@
+.button-show {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: @blue;
+  background-color: @white;
+
+  border: none;
+  padding: 14px 45px;
+  border-radius: 25px;
+
+  display: block;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 3px 6px rgba(@black, 0.14));
+  }
+
+  &:active {
+    background-color: @yellow-dark2;
+    color: rgba(@blue, 0.3);
+    filter: none;
+  }
+}

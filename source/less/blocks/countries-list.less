@@ -1,0 +1,63 @@
+
+
+.countries-list__list {
+  max-width: 220px;
+  min-height: 205px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 15px;
+}
+
+.countries-list__letter {
+  background-color: @white;
+  border: 1px solid @ligh-gray3;
+  text-align: center;
+  padding-top: 10px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid @dark-gray3;
+  }
+
+  &:active,
+  &--active {
+    color: @white;
+    background-color: @blue3;
+    border: 1px solid @blue3;
+  }
+}
+
+.countries-list__letter-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: @blue3;
+  text-transform: uppercase;
+
+  &:active,
+  &--active {
+    color: @white;
+  }
+}
+
+
+.countries-list__list-letter {
+  display: none;
+
+  .list();
+}
+
+.countries-list__item-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: @dark-gray;
+}
+
+.countries-list__list-letter-a {
+  .list();
+  margin-bottom: 28px;
+}
