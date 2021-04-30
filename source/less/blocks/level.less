@@ -1,5 +1,4 @@
 .level__circle {
-
   stroke-dashoffset: 65;
 
   &--frisova {
@@ -13,6 +12,27 @@
   &--form {
     stroke-dashoffset: 20;
     stroke-dasharray: 210 40;
+  }
+
+  &--catalog {
+    stroke-dashoffset: 97;
+
+    &-frisova {
+      stroke-dasharray: 195 5;
+    }
+
+    &-demin {
+      stroke-dasharray: 180 20;
+    }
+
+    &-smolov {
+      stroke-dasharray: 65 135;
+    }
+
+    &-rogovaya {
+      stroke-dashoffset: 15;
+      stroke-dasharray: 50 69;
+    }
   }
 }
 
@@ -28,6 +48,13 @@
     position: relative;
     border-radius: 50%;
   }
+
+  &--catalog {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+  }
 }
 
 .level__info {
@@ -37,6 +64,10 @@
 
   &--form {
     margin-top: -100px;
+  }
+
+  &--catalog {
+    margin-top: -70px;
   }
 }
 
@@ -68,6 +99,14 @@
     margin-bottom: 7px;
     border-bottom: 1px solid rgba(@dark-gray, 0.3);
   }
+
+  &--catalog {
+    font-size: 24px;
+    line-height: 24px;
+    color: @blue3;
+    margin-top: 12px;
+    padding-left: 3px;
+  }
 }
 
 .level__text {
@@ -89,5 +128,9 @@
     color: @dark-gray;
 
     width: 50px;
+  }
+
+  &--catalog {
+    display: none;
   }
 }

@@ -1,0 +1,38 @@
+.travelers-profiles__list {
+  .list();
+}
+
+.travelers-profiles__item {
+  margin-bottom: 10px;
+}
+
+.travelers-profiles__yet-botton {
+  margin-bottom: 18px;
+  display: block;
+  text-align: center;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("");
+    width: 18px;
+    height: 18px;
+    left: -40px;
+    top: 2px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.travelers-profiles__pagenavi {
+  margin-bottom: 46px;
+}
