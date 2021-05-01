@@ -4,11 +4,27 @@
 
 .invite-form__wrapper {
   padding: 105px 25px 30px 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 133px 75px 60px 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 208px 133px 103px 133px;
+  }
 }
 
 .invite-form__title {
   text-align: center;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .invite-form__description {
@@ -16,6 +32,26 @@
   margin-bottom: 30px;
   .text();
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 32px;
+    max-width: 618px;
+    margin-bottom: 65px;
+
+    & br {
+      display: none;
+    }
+
+    br:nth-child(2) {
+      display: inline;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
 
   & a {
     color: @yellow;
@@ -34,6 +70,16 @@
 
 .invite-form__email {
   margin-bottom: 30px;
+  display: flex;
+  max-height: 64px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .invite-form__email-input {
@@ -43,11 +89,26 @@
   border: 4px solid @white;
   background-color: @white;
 
+  min-width: 54px;
+  min-height: 73px;
 
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 25px;
-  border-radius: 15px;
+  padding: 22px 141px 22px 25px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    min-width: 76px;
+
+    padding: 0 431px 0 36px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 623px;
+  }
 
   &:hover {
     color: rgba(@dark-gray, 0.5);
@@ -70,7 +131,6 @@
   }
 }
 
-
 .invite-form__button {
   min-width: 60px;
   min-height: 24px;
@@ -78,6 +138,21 @@
   border-radius: 15px;
   background-color: @yellow;
   border: none;
+  z-index: 5;
+  margin-left: -14px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 330px;
+    min-height: 81px;
+  }
 }
 
 .invite-form__questions {
@@ -85,4 +160,18 @@
   margin-bottom: 17px;
   .text();
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 40px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 42px;
+  }
 }

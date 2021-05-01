@@ -1,9 +1,23 @@
 .main-nav {
   background-color: @white;
+
+  @media (min-width: @desktop-width) {
+    background-color: inherit;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__wrapper {
   padding: 0 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 97px;
+  }
 }
 
 .main-nav__list {

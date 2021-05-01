@@ -1,7 +1,17 @@
 body {
   font-family: "Blogger Sans", "Arial", sans-serif;
   background: gray;
+
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
+
   margin: 0 auto;
 }
 
@@ -42,4 +52,16 @@ img {
 
 .non-link-decoration {
   text-decoration: none;
+}
+
+.margin() {
+  margin-left: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 130px;
+  }
 }

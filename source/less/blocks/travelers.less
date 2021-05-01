@@ -3,19 +3,75 @@
 }
 
 .travelers__wrapper {
-  padding: 100px 25px 30px 25px;
+  padding: 100px 0 30px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 208px 0 87px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 231px 0 134px 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 174px 133px 80px;
+  }
 }
 
 .travelers__title {
-  margin-left: 25px;
-  margin-right: 29px;
+  .margin();
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .travelers__description {
-  margin: 0 29px 25px 25px;
+  .margin();
+  margin-bottom: 25px;
   .text();
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 39px;
+    max-width: 427px;
+
+    &-b {
+      font-size: 21px;
+      line-height: 24px;
+      margin-bottom: 59px;
+    }
+  }
+}
+
+.travelers__list {
+  .list();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin: 0 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+}
+
+.travelers__item {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -60px;
+  }
 }
 
 .travelers__avatar {
@@ -23,19 +79,15 @@
   border-top-left-radius: 15px;
 }
 
-.travelers__list {
-  .list();
-}
-
-.travelers__item {
-  margin-bottom: 10px;
-}
-
 .travelers__info {
-  padding: 27px 36px 20px 46px;
+  padding: 27px 0 20px 0;
   background-color: @white;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding: 27px 0 20px 0;
+  }
 }
 
 .travelers__name {
@@ -47,6 +99,37 @@
 
   text-align: center;
   cursor: pointer;
+
+  max-width: 150px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: @light-red;
+
+    @media (min-width: @tablet-width) {
+      left: 10px;
+    }
+  }
+
+  &--online::before {
+    background-color: @green;
+  }
 
   &:hover,
   &:focus {
@@ -66,7 +149,16 @@
   color: @dark-gray;
 
   text-align: center;
-  margin: 15px 0;
+  max-width: 188px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+    max-width: 223px;
+    margin-bottom: 24px;
+  }
 }
 
 .travelers__transpotrs-list {
@@ -74,5 +166,17 @@
 }
 
 .travelers__to-all {
+  margin: 0 25px;
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 75px;
+    margin-top: 81px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .margin();
+    margin-top: 0;
+    width: 280px;
+  }
 }
