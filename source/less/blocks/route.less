@@ -4,13 +4,15 @@
 
 .route__wrapper {
   padding: 63px 25px 35px 25px;
+  .width();
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     padding: 102px 75px 84px 75px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 116px 135px 56px 404px;
+    padding: 116px 0 56px 0;
 
     display: flex;
     justify-content: space-between;
@@ -35,11 +37,13 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
+    margin-left: 271px;
   }
 }
 
 .route__button {
   @media (min-width: @desktop-width) {
     width: 263px;
+    margin-right: 75px;
   }
 }

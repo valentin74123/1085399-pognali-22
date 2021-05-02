@@ -3,8 +3,9 @@
 }
 
 .about__wrapper {
-  .margin();
+  margin: 0 auto;
   padding: 30px 0 85px 0;
+  .width();
 
   @media (min-width: @tablet-width) {
     padding-top: 137px;
@@ -19,6 +20,7 @@
 
 .about__title {
   margin-bottom: 20px;
+  .margin();
 
   @media (min-width: @tablet-width) {
     margin-bottom: 40px;
@@ -30,6 +32,7 @@
 }
 
 .about__description {
+  .margin();
   .text();
   color: @white;
   margin-bottom: 20px;

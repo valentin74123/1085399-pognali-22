@@ -2,16 +2,6 @@ body {
   font-family: "Blogger Sans", "Arial", sans-serif;
   background: gray;
 
-  width: 320px;
-
-  @media (min-width: @tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1440px;
-  }
-
   margin: 0 auto;
 }
 
@@ -55,13 +45,25 @@ img {
 }
 
 .margin() {
-  margin-left: 50px;
+  margin-left: 25px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 75px;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 130px;
+    margin-left: 70px;
+  }
+}
+
+.width() {
+  width: 270px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1320px;
   }
 }

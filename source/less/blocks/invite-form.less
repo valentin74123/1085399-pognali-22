@@ -4,13 +4,15 @@
 
 .invite-form__wrapper {
   padding: 105px 25px 30px 25px;
+  .width();
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     padding: 133px 75px 60px 75px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 208px 133px 103px 133px;
+    padding: 208px 0 103px 0;
   }
 }
 
@@ -90,7 +92,6 @@
   background-color: @white;
 
   min-width: 54px;
-  min-height: 73px;
 
   padding: 22px 141px 22px 25px;
   border-bottom-left-radius: 15px;
@@ -100,6 +101,7 @@
     font-size: 24px;
     line-height: 24px;
     min-width: 76px;
+    min-height: 72px;
 
     padding: 0 431px 0 36px;
     border-bottom-left-radius: 20px;
@@ -140,6 +142,14 @@
   border: none;
   z-index: 5;
   margin-left: -14px;
+
+  & span {
+    visibility: hidden;
+
+    @media (min-width: @desktop-width) {
+      visibility: visible;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     min-width: 80px;

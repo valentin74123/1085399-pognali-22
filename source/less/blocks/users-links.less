@@ -49,6 +49,7 @@
   .users-links {
     &--main-nav {
       margin-bottom: 130px;
+      margin-left: 25px;
     }
   }
 
@@ -83,19 +84,13 @@
 
 @media (min-width: @desktop-width) {
   .users-links {
+    &--main-nav {
+      display: none;
+    }
+
     &--form {
       display: flex;
       justify-content: space-around;
     }
-  }
-
-  .users-links__info {
-    &--main-nav {
-      display: none;
-    }
-  }
-
-  .users-links__login {
-    display: none;
   }
 }
