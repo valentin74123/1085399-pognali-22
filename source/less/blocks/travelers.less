@@ -15,33 +15,45 @@
 
     display: grid;
 
-    grid-template-columns: 428px 630px;
+    grid-template-columns: 498px 630px;
     column-gap: 193px;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.travelers__text-wrapper {
+  .margin();
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 85px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
 .travelers__title {
-  .margin();
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 55px;
   }
-
-  @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
 }
 
 .travelers__description {
-  .margin();
   margin-bottom: 25px;
   .text();
   color: @white;
+
+  &--bold {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
@@ -49,26 +61,18 @@
     margin-bottom: 39px;
     max-width: 427px;
 
-    &-b {
+    &--bold {
       font-size: 21px;
       line-height: 24px;
-      margin-bottom: 59px;
+      margin-bottom: 0;
     }
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 42px;
 
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    &-b {
-      margin-bottom: 85px;
-
-      grid-row-start: 3;
-      grid-row-end: 4;
+    &--bold {
+      margin-bottom: 0;
     }
   }
 }
@@ -90,13 +94,14 @@
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: -1;
   }
 }
 
 .travelers__item {
   width: 270px;
   margin: 0 auto;
+  margin-top: -60px;
   margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
@@ -109,6 +114,13 @@
 .travelers__avatar {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+
+  max-width: 100%;
+  height: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 285px;
+  }
 }
 
 .travelers__info {
@@ -201,10 +213,11 @@
   @media (min-width: @desktop-width) {
     .margin();
     width: 280px;
+    align-self: flex-end;
 
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
