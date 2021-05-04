@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 630px 379px;
     column-gap: 171px;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
   }
 }
 
@@ -94,6 +94,7 @@
 
   @media (min-width: @tablet-width) {
     .margin();
+    width: auto;
     display: grid;
     grid-template-columns: 432px 184px;
     grid-template-rows: 1fr;
@@ -132,11 +133,7 @@
     width: 70px;
     height: 47px;
     top: 17px;
-    right: -74%;
-  }
-
-  @media (min-width: @desktop-width) {
-    right: -54%;
+    right: 150px;
   }
 }
 
@@ -214,5 +211,6 @@
 
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-end: -1;
   }
 }
