@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -26,7 +27,7 @@
               <a href="catalog.html" class="non-link-decoration">Попутчики</a>
             </li>
           </ul>
-          <ul class="main-nav__list users-links">
+          <ul class="main-nav__list users-links users-links--main-nav">
             <li class="users-links__item">
               <a class="users-links__login js-login non-link-decoration button-yellow button-yellow--login-nav" href="login.html">
                 Авторизация
@@ -152,19 +153,23 @@
 
       <section class="about">
         <div class="about__wrapper">
-          <h2 class="about__title text-title non-margin">О сервисе</h2>
-          <p class="about__description non-margin">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-          <p class="about__description non-margin"><b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b></p>
-          <a class="about__to-all non-link-decoration button-index" href="">
-            Подробнее
-          </a>
+          <div class="about__text-wrapper">
+            <h2 class="about__title text-title non-margin">О сервисе</h2>
+            <p class="about__description non-margin">Любое путешествие веселее<span>&nbsp;&nbsp;&nbsp;</span> с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> и черпайте вдохновение в чужих.</p>
+            <p class="about__description about__description--bold non-margin">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+            <a class="about__to-all non-link-decoration button-index" href="">
+              Подробнее
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="directions">
         <div class="directions__wrapper">
-          <h2 class="directions__main-title text-title non-margin">Направления</h2>
-          <p class="directions__text non-margin">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <div class="directions__text-wrapper">
+            <h2 class="directions__main-title text-title non-margin">Направления</h2>
+            <p class="directions__text non-margin">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          </div>
           <ul class="directions__list">
             <li class="directions__item">
               <img class="directions__photo" src="https://via.placeholder.com/270x110" alt="">
@@ -185,7 +190,7 @@
                   <h3 class="directions__title non-margin">Франция</h3>
                   <p class="directions__description non-margin">Трэ бьен, манифик!</p>
                 </div>
-                <p class="directions__people">12518 <span class="visually-hidden">человек хотят сюда отправиться</span></p>
+                <p class="directions__people non-margin">12518 <span class="visually-hidden">человек хотят сюда отправиться</span></p>
               </div>
             </li>
             <li class="directions__item">
@@ -208,9 +213,11 @@
 
       <section class="travelers">
         <div class="travelers__wrapper">
-          <h2 class="travelers__title text-title non-margin">Попутчики</h2>
-          <p class="travelers__description non-margin">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p class="travelers__description non-margin"><b>Теперь можно легко найти единомышленников!</b></p>
+          <div class="travelers__text-wrapper">
+            <h2 class="travelers__title text-title non-margin">Попутчики</h2>
+            <p class="travelers__description non-margin">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="travelers__description travelers__description--bold non-margin">Теперь можно легко найти единомышленников!</p>
+          </div>
           <ul class="travelers__list">
             <li class="travelers__item">
               <div class="travelers__level">
@@ -295,7 +302,7 @@
               </div>
 
               <div class="travelers__info">
-                <h3 class="travelers__name non-margin">Петя Демин</h3>
+                <h3 class="travelers__name travelers__name--online non-margin">Петя Демин</h3>
                 <p class="travelers__hashtags non-margin">#бургер #бар #футбол #концерт #крафт</p>
 
                 <ul class="travelers__transpotrs-list transport-icons">
@@ -404,11 +411,11 @@
           <form class="invite-form__email" action="https://echo.htmlacademy.ru" method="POST">
             <input class="invite-form__email-input" type="email" name="email" placeholder="E-mail" required>
             <button class="invite-form__button button-index button-index--reg" type="submit">
-              Регистрация
+              <span>Регистрация</span>
             </button>
           </form>
           <p class="invite-form__questions non-margin">Остались вопросы?<br> Мы с радостью на них ответим!</p>
-          <div class="users-links">
+          <div class="users-links users-links--form">
             <a class="users-links__info users-links__info--form" href="tel:88005558628">
               <article class="users-links__icons">
                 <svg class="users-links__icon users-links__icon--tel" width="17" height="15">
@@ -431,7 +438,7 @@
 
       <section class="route">
         <div class="route__wrapper">
-          <p class="route__address non-margin">ул. Большая<br> Конюшенная, 19/8</p>
+          <p class="route__address non-margin">ул. Большая Конюшенная, 19/8</p>
           <a class="route__button non-link-decoration button-index button-index--route" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=17">
             Проложить маршрут
           </a>
@@ -445,9 +452,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <img class="page-footer__logo-img" src="https://via.placeholder.com/96x15" alt="Логотип «‎Погнали»">
-        </a>
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo">
+            <img class="page-footer__logo-img" src="https://via.placeholder.com/96x15" alt="Логотип «‎Погнали»">
+          </a>
+        </div>
 
         <div class="page-footer__social social">
           <ul class="social__list">

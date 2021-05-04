@@ -3,15 +3,40 @@
 }
 
 .page-footer__wrapper {
-  padding: 37px 25px 20px 25px;
+  padding: 37px 0 20px 0;
+  .wrapper();
+
+  @media (min-width: @tablet-width) {
+    padding: 46px 0 32px 0;
+    width: 690px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 46px 0 43px 0;
+    width: 1322px;
+  }
 }
 
-.page-footer__logo-img {
-  display: block;
+.page-footer__logo-wrapper {
+  max-width: 96px;
   margin: 0 auto;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .page-footer__social {
-  margin-top: 40px;
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

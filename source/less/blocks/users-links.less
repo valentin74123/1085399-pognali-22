@@ -1,5 +1,7 @@
 .users-links {
-  margin-bottom: 40px;
+  &--main-nav {
+    margin-bottom: 40px;
+  }
 }
 
 .users-links__info {
@@ -41,4 +43,54 @@
 
 .users-links__login {
   margin-bottom: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .users-links {
+    &--main-nav {
+      margin-bottom: 130px;
+      margin-left: 25px;
+    }
+  }
+
+
+  .users-links__info {
+    &--main-nav {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    &--form {
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+
+  .users-links__login {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+
+    padding-top: 14px;
+    padding-bottom: 13px;
+    min-width: 132px;
+    letter-spacing: 0.03em;
+
+    position: absolute;
+    top: 0;
+    right: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .users-links {
+    &--main-nav {
+      display: none;
+    }
+
+    &--form {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
 }

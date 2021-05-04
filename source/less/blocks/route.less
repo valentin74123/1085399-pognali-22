@@ -3,7 +3,20 @@
 }
 
 .route__wrapper {
-  padding: 63px 25px 35px 25px;
+  padding: 63px 0 35px 0;
+  .wrapper();
+
+  @media (min-width: @tablet-width) {
+    padding: 102px 0 84px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 116px 0 56px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .route__address {
@@ -12,4 +25,24 @@
   text-transform: uppercase;
   color: @blue2;
   margin-bottom: 32px;
+  max-width: 143px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    max-width: none;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-left: 271px;
+  }
+}
+
+.route__button {
+  @media (min-width: @desktop-width) {
+    width: 263px;
+    margin-right: 75px;
+  }
 }

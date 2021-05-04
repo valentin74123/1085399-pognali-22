@@ -1,7 +1,22 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   color: @dark-gray;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: flex-end;
+  }
+}
+
+.copyright__text {
+  @media (min-width: @tablet-width) {
+    margin-right: 25px;
+  }
 }
