@@ -5,6 +5,12 @@
 .plans__wrapper {
   padding-top: 28px;
   padding-bottom: 60px;
+  .wrapper();
+
+  @media (min-width: @tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 118px;
+  }
 }
 
 .plans__title {
@@ -15,13 +21,35 @@
 
   color: @blue2;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 48px;
+
+    @media (min-width: @desktop-width) {
+      .padding-form-page();
+    }
+  }
 }
 
 .plans__list {
   .list();
+
+  @media (min-width: @desktop-width) {
+    .padding-form-page();
+  }
 }
 
 .plans__item {
   margin-bottom: 10px;
   border-radius: 15px;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 15px;
+  }
 }

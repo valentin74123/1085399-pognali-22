@@ -36,6 +36,12 @@
   &--max {
     right: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+    margin: 0 23px;
+  }
 }
 
 .count__print {
@@ -67,4 +73,13 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+  }
 }

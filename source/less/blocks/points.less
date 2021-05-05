@@ -1,8 +1,12 @@
 .points {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-left: 86px;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    .list();
+    margin-left: auto;
+    margin-right: 45px;
+  }
 }
 
 .points__item {

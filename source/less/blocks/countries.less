@@ -1,5 +1,21 @@
+.countries {
+  display: grid;
+  grid-template-columns: 167px 52px;
+  column-gap: 19px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: auto 149px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: auto 223px;
+    column-gap: 45px;
+  }
+}
+
 .countries__select {
   position: relative;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -14,6 +30,13 @@
   appearance: none;
   background: url("");
   background-size: 16px 11px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    padding: 25px 26px 23px 26px;
+  }
 }
 
 .countries__flags {
@@ -22,7 +45,18 @@
   padding: 9px;
   border-radius: 4px;
   width: 35px;
-  height: 24px;
+  height: 22px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  &--bosnia {
+    grid-row-start: 3;
+  }
+
+  &--czech-republic {
+    grid-row-start: 4;
+  }
 
   &::after {
     position: absolute;
@@ -33,6 +67,38 @@
     height: 8px;
     border-radius: 50%;
     background-color: @blue2;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    align-self: center;
+    margin-bottom: 16px;
+    padding-left: 25px;
+    border: none;
+    width: auto;
+    height: auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 16px;
+      right: auto;
+      left: -3px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.countries__flag {
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 47px;
   }
 }
 
@@ -49,4 +115,13 @@
   border-radius: 50%;
   filter: opacity(1);
   background-color: @light-gray;
+
+  @media (min-width: @tablet-width) {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 21px;
+    background-color: inherit;
+  }
 }

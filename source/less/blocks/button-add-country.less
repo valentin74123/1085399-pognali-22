@@ -1,9 +1,13 @@
 .button-add-country {
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
-  color: @blue3;
+  color: @blue2;
+
+  width: 220px;
+  padding: 10px 20px;
   letter-spacing: 0.1em;
   border-radius: 4px;
   text-align: left;
@@ -18,5 +22,13 @@
 
   &:active {
     background-color: @light-gray4;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+
+    padding: 25px 26px 23px 26px;
   }
 }
