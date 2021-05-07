@@ -1,12 +1,18 @@
 .button-choose-country {
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
   color: @blue3;
+
   letter-spacing: 0.1em;
   border: 1px solid @ligh-gray3;
   background-color: inherit;
+  text-align: left;
+  text-transform: uppercase;
+  width: 220px;
+  padding: 11px;
 
   &:hover,
   &:focus {
@@ -17,5 +23,13 @@
     color: @white;
     border: 1px solid inherit;
     background-color: @blue3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+
+    padding: 25px 26px 23px 26px;
   }
 }

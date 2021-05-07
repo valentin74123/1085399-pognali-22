@@ -4,6 +4,7 @@
 
 .page-heading__inner {
   padding-top: 95px;
+  .wrapper();
 }
 
 .page-heading__title {
@@ -21,11 +22,27 @@
   &::before {
     position: absolute;
     content: "";
-    top: 44px;
+    bottom: -3px;
     width: 214px;
     height: 5px;
     background-color: @orange;
     border-radius: 4px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    padding-bottom: 62px;
+
+    &::before {
+      width: 358px;
+      height: 8px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .padding-form-page();
   }
 }
 

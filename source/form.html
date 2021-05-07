@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -26,7 +27,7 @@
               <a class="non-link-decoration" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <ul class="main-nav__list users-links">
+          <ul class="main-nav__list users-links users-links--main-nav">
             <li class="users-links__item">
               <a class="users-links__login js-login non-link-decoration button-yellow button-yellow--login-nav" href="login.html">
                 Авторизация
@@ -148,15 +149,19 @@
             <ul class="plans__list">
               <li class="plans__item plan-infomation">
                 <h3 class="plan-infomation__cities non-margin">Франция, Италия</h3>
-                <p class="plan-infomation__people non-margin">3 Попутчика</p>
-                <p class="plan-infomation__dates non-margin">26 мар — 29 мар</p>
-                <button class="plan-infomation__button button-change" type="button">Изменить</button>
+                <div class="plan-infomation__wrapper">
+                  <p class="plan-infomation__people non-margin">3 Попутчика</p>
+                  <p class="plan-infomation__dates non-margin">26 мар — 29 мар</p>
+                  <button class="plan-infomation__button button-change" type="button">Изменить</button>
+                </div>
               </li>
               <li class="plans__item plan-infomation">
                 <h3 class="plan-infomation__cities plan-infomation__cities--number non-margin">Таиланд, Индонезия</h3>
-                <p class="plan-infomation__people non-margin">1 Попутчик</p>
-                <p class="plan-infomation__dates non-margin">1 июл — 15 июл</p>
-                <button class="plan-infomation__button button-change" type="button">Изменить</button>
+                <div class="plan-infomation__wrapper">
+                  <p class="plan-infomation__people non-margin">1 Попутчик</p>
+                  <p class="plan-infomation__dates non-margin">1 июл — 15 июл</p>
+                  <button class="plan-infomation__button button-change" type="button">Изменить</button>
+                </div>
               </li>
             </ul>
           </div>
@@ -180,7 +185,7 @@
                     <li class="points__item">Развлечения</li>
                   </ul>
 
-                  <label class="steps__label steps__label--companion" for="traveler">Ищу попутчиков:</label>
+                  <label class="steps__label steps__label--people" for="traveler">Ищу попутчиков:</label>
                   <p class="steps__denomination steps__denomination--people non-margin">Чел.</p>
 
                   <div class="steps__count steps__count--people count">
@@ -203,8 +208,8 @@
                     </button>
                   </div>
 
-                  <label class="steps__label" for="duration">Длительность:</label>
-                  <p class="steps__denomination non-margin">Дн.</p>
+                  <label class="steps__label steps__label--days" for="duration">Длительность:</label>
+                  <p class="steps__denomination steps__denomination--days non-margin">Дн.</p>
 
                   <div class="steps__count steps__count--days  count">
                     <input class="count__number" type="number" id="duration" name="duration" min="1" value="3">
@@ -270,7 +275,7 @@
                       <td class="calendar__date calendar__date--disabled">26</td>
                       <td class="calendar__date calendar__date--disabled">27</td>
                       <td class="calendar__date calendar__date--disabled">28</td>
-                      <td class="calendar__date calendar__date--disabled">1</td>
+                      <td class="calendar__date calendar__date--disabled">1 <span>мар</span></td>
                     </tr>
                     <tr class="calendar__row">
                       <td class="calendar__date calendar__date--disabled">2</td>
@@ -305,7 +310,7 @@
                       <td class="calendar__date calendar__date--disabled">25</td>
                       <td class="calendar__date calendar__date--hover">
                         <input class="visually-hidden calendar__input" type="checkbox" id="26" checked>
-                        <label class="calendar__label" for="26" >26</label>
+                        <label class="calendar__label" for="26" >26 <span>Заезд</span></label>
                       </td>
                       <td class="calendar__date calendar__date--active">
                         <input class="visually-hidden calendar__input" type="checkbox" id="27" checked>
@@ -313,7 +318,7 @@
                       </td>
                       <td class="calendar__date calendar__date--active">
                         <input class="visually-hidden calendar__input" type="checkbox" id="28" checked>
-                        <label class="calendar__label" for="28" >28</label>
+                        <label class="calendar__label" for="28" >28 <span>Выезд</span></label>
                       </td>
                       <td class="calendar__date calendar__date--active">
                         <input class="visually-hidden calendar__input" type="checkbox" id="29">
@@ -331,7 +336,7 @@
                       </td>
                       <td class="calendar__date">
                         <input class="visually-hidden calendar__input" type="checkbox" id="1">
-                        <label class="calendar__label" for="1" >1</label>
+                        <label class="calendar__label" for="1" >1 <span>апр</span></label>
                       </td>
                       <td class="calendar__date">
                         <input class="visually-hidden calendar__input" type="checkbox" id="2">
@@ -370,7 +375,7 @@
                     <li class="points__item">Развлечения</li>
                   </ul>
 
-                  <p class="steps__countries countries countries--bosnia non-margin">
+                  <p class="steps__countries steps__countries--bosnia countries non-margin">
                     <select class="countries__select" name="country">
                       <option value="Босния и герцеговина" selected>Босния и герцеговина</option>
                     </select>
@@ -382,8 +387,8 @@
                     </div>
                   </p>
 
-                  <p class="steps__countries countries countries--czech-republic non-margin">
-                    <select class="countries__select" name="country">
+                  <p class="steps__countries steps__countries--czech-republic countries non-margin">
+                    <select class="countries__select countries__select--czech-republic" name="country">
                       <option value="Чехия" selected>Чехия</option>
                     </select>
                     <div class="countries__flags countries__flags--czech-republic">
@@ -539,7 +544,7 @@
               </li>
 
               <li class="steps__item steps__item--three">
-                <div class="steps__wrapper steps__wrapper--two">
+                <div class="steps__wrapper steps__wrapper--three">
                   <h3 class="steps__title steps__title--three non-margin" id="step-three">Шаг 3.<br> Развлечения</h3>
                   <p class="steps__info steps__info--three non-margin">Наконец, расскажите о своих планах времяпровождения.
                     Можно писать в свободной форме и ставить тэги.
@@ -551,15 +556,20 @@
                     <li class="points__item points__item--active">Развлечения</li>
                   </ul>
 
-                  <div class="steps__country country country--bosnia">
-                    <label for="bosnia-entertainment" class="country__name">Босния и Герцеговина</label>
-                    <img class="country__flag country__flag--bosnia" src="https://via.placeholder.com/35x25" alt="Босния">
+                  <div class="steps__country steps__country--bosnia country">
+                    <div class="country__wrapper">
+                      <label for="bosnia-entertainment" class="country__name">Босния и Герцеговина</label>
+                      <img class="country__flag country__flag--bosnia" src="https://via.placeholder.com/35x25" alt="Босния">
+                    </div>
+
                     <textarea class="country__textarea country__textarea--bosnia" name="bosnia-entertainment" id="bosnia-entertainment" cols="30" rows="10" placeholder="План действий"></textarea>
                   </div>
 
-                  <div class="steps__country country country--czech-republic">
-                    <label for="czech-republic-entertainment" class="country__name">Чехия</label>
-                    <img class="country__flag" src="https://via.placeholder.com/35x25" alt="Чехия">
+                  <div class="steps__country steps__country--czech-republic country">
+                    <div class="country__wrapper">
+                      <label for="czech-republic-entertainment" class="country__name">Чехия</label>
+                      <img class="country__flag" src="https://via.placeholder.com/35x25" alt="Чехия">
+                    </div>
                     <textarea class="country__textarea country__textarea--czech-republic" name="czech-republic-entertainment" id="czech-republic-entertainment" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                   </div>
 
@@ -576,9 +586,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <img class="page-footer__logo-img" src="https://via.placeholder.com/96x15" alt="Логотип «‎Погнали»">
-        </a>
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo">
+            <img class="page-footer__logo-img" src="https://via.placeholder.com/96x15" alt="Логотип «‎Погнали»">
+          </a>
+        </div>
 
         <div class="page-footer__social social">
           <ul class="social__list">

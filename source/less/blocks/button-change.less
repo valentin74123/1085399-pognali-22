@@ -4,12 +4,20 @@
   font-size: 14px;
   line-height: 14px;
   color: @black;
+
   opacity: 0.3;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.03em;
   border: none;
   background-color: inherit;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    letter-spacing: 0.1em;
+  }
 
   &:hover,
   &:focus {

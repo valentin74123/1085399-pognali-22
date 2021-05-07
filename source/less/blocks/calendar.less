@@ -2,7 +2,10 @@
   min-height: 215px;
   min-width: 221px;
   border-collapse: collapse;
-  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 441px;
+  }
 }
 
 .calendar__day {
@@ -19,6 +22,19 @@
   & span {
     display: none;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+
+    & span {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    padding-left: 16px;
+  }
 }
 
 .calendar__date {
@@ -30,6 +46,26 @@
   text-align: center;
   border: 1px solid @gray2;
   cursor: pointer;
+
+  & span {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    padding-left: 16px;
+    padding-top: 14px;
+    vertical-align: top;
+    width: 144px;
+
+    & span {
+      display: inline;
+    }
+  }
 
   &--disabled {
     opacity: 0.3;

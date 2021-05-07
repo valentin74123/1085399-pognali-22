@@ -1,16 +1,28 @@
-.choose-country__button {
-  display: block;
-  width: auto;
-  text-align: left;
-  text-transform: uppercase;
+.choose-country {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 369px 149px;
+  }
 
-  padding: 11px;
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.choose-country__button {
   border-radius: 4px;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 13px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 
 .choose-country__modal {
-  width: 233px;
+  width: 220px;
   background-color: @white;
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   outline: 1px solid @ligh-gray3;
@@ -18,18 +30,70 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 525px;
+    padding: 35px 23px 33px 27px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 415px;
+      top: 0;
+      right: 232px;
+      background-color: @light-gray9;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 663px;
+    padding: 15px 57px 20px 10px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 445px;
+      top: 0;
+      right: 265px;
+      background-color: @light-gray9;
+    }
+  }
 }
 
 .choose-country__table {
-  min-width: 233px;
+  width: 220px;
   height: 205px;
   border-collapse: collapse;
   cursor: pointer;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 265px;
+    height: 346px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 361px;
+    height: 408px;
+  }
 }
 
 .choose-country__letter {
   text-align: center;
+  width: 44px;
+
   border: 1px solid @ligh-gray3;
 
   &:hover,
@@ -42,6 +106,15 @@
     background-color: @blue2;
     border: 1px solid @blue2;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 60px;
+    border-radius: 4px;
+  }
 }
 
 .choose-country__letter-link {
@@ -49,6 +122,7 @@
   line-height: 18px;
   font-weight: 500;
   color: @blue2;
+  padding: 10px 15px;
 
   text-transform: uppercase;
 
@@ -56,11 +130,24 @@
   &--active {
     color: @white;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 17px;
+  }
 }
 
 .choose-country__list {
   .list();
   margin-left: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-left: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
+  }
 }
 
 .choose-country__botton {
@@ -70,6 +157,11 @@
   cursor: pointer;
   background-color: inherit;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &:hover,
   &:focus {

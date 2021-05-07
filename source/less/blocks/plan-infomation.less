@@ -1,13 +1,23 @@
 .plan-infomation {
   background-color: @white;
-  padding: 24px 104px 24px 23px;
+  padding: 24px 80px 24px 23px;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 32px 14px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 42px;
+  }
 }
 
 .plan-infomation__cities {
   font-size: 16px;
   line-height: 16px;
   font-weight: bold;
-  color: @blue3;
+  color: @blue2;
   margin-bottom: 20px;
   margin-left: 18px;
 
@@ -20,11 +30,50 @@
     width: 13px;
     height: 16px;
     left: -18px;
+
+    font-size: 16px;
+    line-height: 16px;
     font-weight: 500;
   }
 
   &--number::before {
     content: "2.";
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+
+    margin-bottom: 54px;
+    margin-left: 0;
+
+    &::before {
+      left: auto;
+      right: 0;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-left: 52px;
+
+    &::before {
+
+      right: auto;
+      left: -50px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+.plan-infomation__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
   }
 }
 
@@ -34,19 +83,49 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
-  color: @blue3;
+  color: @blue2;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
 }
 
 .plan-infomation__people {
   margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 145px;
+    margin-right: 50px;
+  }
 }
 
 .plan-infomation__dates {
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .plan-infomation__button {
+  font-family: "Blogger Sans", "Arial", sans-serif;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 120px;
+  }
 }
