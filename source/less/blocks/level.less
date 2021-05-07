@@ -33,6 +33,21 @@
       stroke-dashoffset: 15;
       stroke-dasharray: 50 69;
     }
+
+    @media (min-width: @tablet-width) {
+      r: 30px;
+      cx: 32px;
+      cy: 32px;
+
+      stroke-dashoffset: 59;
+
+      &-rogovaya {
+        @media (min-width: @tablet-width) {
+          stroke-dashoffset: 70;
+          stroke-dasharray: 117 93;
+        }
+      }
+    }
   }
 }
 
@@ -54,6 +69,11 @@
     height: 45px;
     border-radius: 50%;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 
@@ -106,6 +126,13 @@
     color: @blue3;
     margin-top: 12px;
     padding-left: 3px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 1px;
+      margin-bottom: 1px;
+      border-bottom: 1px solid rgba(@black, 0.1);
+      width: 30px;
+    }
   }
 }
 
@@ -132,5 +159,17 @@
 
   &--catalog {
     display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: normal;
+      color: @black;
+      opacity: 0.4;
+      margin: 0 auto;
+      text-align: center;
+      width: 30px;
+    }
   }
 }

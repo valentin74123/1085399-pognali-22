@@ -1,10 +1,53 @@
 .list-catalog {
   .list();
+
+  &--hobby {
+    display: none;
+  }
+
+  &--eat {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+
+    &--hobby {
+      display: none;
+    }
+
+    &--eat {
+      display: none;
+    }
+  }
 }
 
 .list-catalog__item {
   margin-left: 36px;
   margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 108px;
+      margin-right: 25px;
+    }
+
+    &:nth-child(3) {
+      width: 114px;
+    }
+
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .list-catalog__description {
@@ -15,6 +58,10 @@
   font-size: 15px;
   line-height: 20px;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .list-catalog__description::before {
@@ -27,6 +74,11 @@
   border-radius: 4px;
   background-color: @white;
   content: "";
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .list-catalog__checkbox[type="checkbox"] {

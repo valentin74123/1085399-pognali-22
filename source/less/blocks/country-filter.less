@@ -5,6 +5,15 @@
 .country-filter__wrapper {
   padding-bottom: 17px;
   padding-top: 33px;
+  .wrapper();
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 56px;
+    padding-top: 184px;
+
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .country-filter__title {
@@ -16,10 +25,44 @@
 
   text-transform: uppercase;
   margin-bottom: 35px;
+  .margin();
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-left: 64px;
+    margin-right: 30px;
+  }
 }
 
 .country-filter__list {
   .list();
+  .margin();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.country-filter__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 32px;
+  }
 }
 
 .country-filter__country {
@@ -31,6 +74,11 @@
 
   opacity: 0.3;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &:hover,
   &:focus {
@@ -44,26 +92,37 @@
 }
 
 .country-filter__uncover {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 20px;
-  color: @blue3;
+  display: none;
 
-  text-transform: uppercase;
-  border: none;
-  background-color: inherit;
+  @media (min-width: @tablet-width) {
+    display: block;
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: @blue3;
 
-  &:active {
-    opacity: 0.3;
+    text-transform: uppercase;
+    border: none;
+    background-color: inherit;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 .country-filter__countries-table {
   padding-bottom: 28px;
+  .wrapper();
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 79px;
+  }
 }

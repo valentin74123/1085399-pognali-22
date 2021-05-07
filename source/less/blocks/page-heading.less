@@ -5,6 +5,13 @@
 .page-heading__inner {
   padding-top: 95px;
   .wrapper();
+
+  &--catalog {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .page-heading__title {
@@ -41,6 +48,16 @@
     }
   }
 
+  &--catalog {
+    &::before {
+      width: 172px;
+
+      @media (min-width: @tablet-width) {
+        width: 288px;
+      }
+    }
+  }
+
   @media (min-width: @desktop-width) {
     .padding-form-page();
   }
@@ -49,20 +66,26 @@
 .page-heading__to-main {
   display: none;
 
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 20px;
-  color: @white;
+  @media (min-width: @tablet-width) {
+    display: block;
 
-  text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: @white;
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-right: 60px;
 
-  &:active {
-    opacity: 0.3;
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
