@@ -64,6 +64,12 @@
 }
 
 .travelers-profile__heart {
+  align-self: end;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
   @media (min-width: @tablet-width) {
     align-self: center;
 
@@ -123,8 +129,15 @@
       left: 220px;
       width: 8px;
       height: 8px;
-      border-radius: 50%;
-      background-color: @light-red;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      top: 11px;
+      left: -20px;
+      width: 8px;
+      height: 8px;
     }
   }
 
