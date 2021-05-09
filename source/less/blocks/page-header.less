@@ -1,3 +1,53 @@
 .page-header {
+  background-color: @dark-blue2;
+  z-index: 5;
+
+  &--opened {
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @dark-blue2;
+  }
+}
+
+.page-header__wrapper {
   position: relative;
+
+  .wrapper();
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper();
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  z-index: 6;
+
+  @media (min-width: @tablet-width) {
+    top: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 48px;
+  }
+}
+
+.page-header__logo-img {
+  @media (min-width: @tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    height: 52px;
+  }
 }

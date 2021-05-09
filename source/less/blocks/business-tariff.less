@@ -1,4 +1,6 @@
 .business-tariff {
+  position: absolute;
+  top: 0;
   width: 270px;
   background-color: @white;
   margin: 0 auto;
@@ -10,6 +12,8 @@
 
   @media (min-width: @desktop-width) {
     width: 750px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
