@@ -1,0 +1,54 @@
+.transpotrs-hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.transpotrs-hover__hover-description {
+  display: none;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: @white;
+  text-align: center;
+  background: @dark-blue4;
+  border-radius: 4px;
+  position: relative;
+
+  padding: 18px 21px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    right: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: @dark-blue4;
+  }
+}
+
+.transpotrs-hover:hover .transpotrs-hover__hover-description {
+  display: block;
+  position: absolute;
+  top: 35px;
+
+  z-index: 2;
+
+
+  &--plane {
+    left: -48px;
+  }
+
+  &--bus {
+    left: -55px;
+  }
+
+  &--bike {
+    left: -40px;
+  }
+
+  &--run {
+    left: -30px;
+  }
+}

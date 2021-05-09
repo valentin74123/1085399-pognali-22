@@ -1,4 +1,11 @@
+.countries-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
 
+    margin-bottom: 77px;
+  }
+}
 
 .countries-list__list {
   max-width: 220px;
@@ -7,6 +14,18 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 50px;
+    row-gap: 50px;
+    max-width: none;
+    width: 1206px;
+    padding-left: 37px;
+  }
 }
 
 .countries-list__letter {
@@ -26,6 +45,25 @@
     background-color: @blue3;
     border: 1px solid @blue3;
   }
+
+  @media (min-width: @tablet-width) {
+    border: inherit;
+    background-color: inherit;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &--active {
+      border: inherit;
+      background-color: inherit;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .countries-list__letter-link {
@@ -41,6 +79,28 @@
   &--active {
     color: @white;
   }
+
+  @media (min-width: @tablet-width) {
+    opacity: 0.3;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &--active {
+      color: @blue3;
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @blue3;
+    opacity: 1;
+    padding: 0;
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -48,6 +108,10 @@
   display: none;
 
   .list();
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
 }
 
 .countries-list__item-link {
@@ -61,4 +125,9 @@
 .countries-list__list-letter-a {
   .list();
   margin-bottom: 28px;
+  .margin();
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

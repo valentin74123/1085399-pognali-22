@@ -1,9 +1,38 @@
+.travelers-profiles {
+  .wrapper();
+
+  @media (min-width: @tablet-width) {
+    .width-catalog-page();
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
 .travelers-profiles__list {
   .list();
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .travelers-profiles__item {
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .travelers-profiles__yet-botton {
@@ -12,6 +41,14 @@
   text-align: center;
 
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 70px;
+  }
 
   &::before {
     position: absolute;

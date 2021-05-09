@@ -16,11 +16,24 @@
     height: 57px;
     background-color: @light-gray;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 0;
+    padding-left: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .pagenavi__list {
   .list();
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .pagenavi__item {
@@ -52,6 +65,10 @@
 .pagenavi__buttons {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    justify-content: right;
+  }
 }
 
 .pagenavi__button {
@@ -60,16 +77,20 @@
 
   padding: 17px 63px;
 
+  @media (min-width: @tablet-width) {
+    padding: 17px 30px;
+  }
+
   & polygon {
-    fill: @blue3;
+    fill: @blue2;
   }
 
   &:hover polygon,
   &:focus polygon {
-    fill: rgba(@blue3, 0.6);
+    fill: rgba(@blue2, 0.6);
   }
 
   &:active polygon {
-    fill: rgba(@blue3, 0.3);
+    fill: rgba(@blue2, 0.3);
   }
 }

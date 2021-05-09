@@ -1,11 +1,49 @@
 .filter {
   background-color: @yellow;
+  .wrapper();
+  border-radius: 20px;
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    .width-catalog-page();
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 285px;
+    height: 775px;
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 .filter__wrapper {
   padding-top: 26px;
   padding-bottom: 22px;
+  margin: 0 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 36px 35px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 46px;
+    padding-bottom: 48px;
+  }
+}
+
+.filter__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .filter__title {
@@ -19,21 +57,52 @@
 
   max-width: 145px;
   margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+    max-width: none;
+
+    padding-bottom: 38px;
+    border-bottom: 1px solid @yellow-dark2;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .filter__fieldset {
-  margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .filter__fieldset-wrapper {
   padding-top: 12px;
   border-top: 1px solid @yellow-dark2;
-}
 
-.filter__item-wrapper {
-  margin-bottom: 15px;
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    border-top: none;
+
+    display: flex;
+
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .filter__item {
@@ -44,9 +113,44 @@
   color: @blue2;
 
   text-transform: uppercase;
+
+  & span {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    width: 105px;
+    margin-right: 22px;
+
+    & span {
+      display: inline;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & span {
+      display: none;
+    }
+  }
+}
+
+.filter__list-transports {
+  .list();
+  margin-bottom: 20px;
 }
 
 .filter__uncover {
   background-color: inherit;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
