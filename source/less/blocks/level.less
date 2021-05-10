@@ -1,39 +1,5 @@
 .level__circle {
-  stroke-dashoffset: 65;
-
-  &--frisova {
-    stroke-dasharray: 195 5;
-  }
-
-  &--demin {
-    stroke-dasharray: 170 30;
-  }
-
-  &--form {
-    stroke-dashoffset: 20;
-    stroke-dasharray: 210 40;
-  }
-
   &--catalog {
-    stroke-dashoffset: 97;
-
-    &-frisova {
-      stroke-dasharray: 195 5;
-    }
-
-    &-demin {
-      stroke-dasharray: 180 20;
-    }
-
-    &-smolov {
-      stroke-dasharray: 65 135;
-    }
-
-    &-rogovaya {
-      stroke-dashoffset: 15;
-      stroke-dasharray: 50 69;
-    }
-
     @media (min-width: @tablet-width) {
       r: 30px;
       cx: 32px;
@@ -96,9 +62,10 @@
   text-align: center;
   margin: 0 auto;
 
+  font-size: 24px;
+  line-height: 24px;
+
   &--index {
-    font-size: 24px;
-    line-height: 24px;
     color: @white;
 
     margin-top: 10px;
@@ -121,8 +88,6 @@
   }
 
   &--catalog {
-    font-size: 24px;
-    line-height: 24px;
     color: @blue3;
     margin-top: 12px;
     padding-left: 3px;
@@ -141,9 +106,10 @@
   text-align: center;
   margin: 0 auto;
 
+  font-size: 14px;
+  line-height: 14px;
+
   &--index {
-    font-size: 14px;
-    line-height: 14px;
     color: @white;
 
     width: 30px;
@@ -162,13 +128,9 @@
 
     @media (min-width: @tablet-width) {
       display: block;
-      font-size: 14px;
-      line-height: 14px;
-      font-weight: normal;
       color: @black;
       opacity: 0.4;
-      margin: 0 auto;
-      text-align: center;
+
       width: 30px;
     }
   }

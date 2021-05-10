@@ -14,21 +14,27 @@
     &--main-nav {
       margin: 0;
       display: flex;
+      align-items: center;
+
+      .users-links__item:nth-child(1) {
+        order: 1;
+      }
     }
 
     &--form {
       display: flex;
-      justify-content: space-around;
     }
   }
 }
-
 
 .users-links__info {
   .text();
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+
+  display: flex;
+  align-items: center;
 
   &--main-nav {
     color: @blue3;
@@ -56,7 +62,7 @@
     }
 
     &:active {
-      opacity: 0.3;
+      opacity: rgba(@yellow-dark, 0.3);
     }
   }
 
@@ -74,34 +80,64 @@
 
   @media (min-width: @desktop-width) {
     &--main-nav {
-      & span {
+      span {
         display: none;
       }
+    }
+
+    &--form:nth-child(2n + 1) {
+      margin-left: 228px;
+    }
+
+    &--form:nth-child(2n + 2) {
+      margin-left: 110px;
     }
   }
 }
 
 .users-links__icon {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+
+  background-color: @dark-blue;
+
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin-right: 22px;
+  }
+
   @media (min-width: @desktop-width) {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
+    margin-right: 31px;
+  }
 
-    &--tel {
-      background-color: @orange;
+  .users-links--main-nav & {
+    @media (min-width: @desktop-width) {
+      width: 50px;
+      height: 50px;
+      margin: 0;
+      vertical-align: middle;
 
-      &:hover,
-      &:focus {
-        background-color: @dark-orange2;
-      }
-    }
-
-    &--mail {
-      background-color: @yellow-dark;
-
-      &:hover,
-      &:focus {
+      &--tel {
         background-color: @orange;
+
+        &:hover,
+        &:focus {
+          background-color: @dark-orange2;
+        }
+      }
+
+      &--mail {
+        background-color: @yellow-dark;
+
+        &:hover,
+        &:focus {
+          background-color: @orange;
+        }
       }
     }
   }

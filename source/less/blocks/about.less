@@ -1,5 +1,7 @@
 .about {
   background-color: @blue3;
+  .border();
+  z-index: 7;
 }
 
 .about__wrapper {
@@ -46,7 +48,7 @@
     font-weight: bold;
   }
 
-  & span:nth-child(2) {
+  span {
     display: none;
   }
 
@@ -56,11 +58,7 @@
     max-width: 300px;
     margin-bottom: 31px;
 
-    & span:nth-child(1) {
-      display: none;
-    }
-
-    & span:nth-child(2) {
+    span {
       display: inline;
     }
 
@@ -75,7 +73,7 @@
     max-width: 619px;
     margin-bottom: 38px;
 
-    & span:nth-child(2) {
+    span {
       display: none;
     }
 

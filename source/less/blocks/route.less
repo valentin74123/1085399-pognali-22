@@ -1,17 +1,22 @@
 .route {
   background-color: @yellow;
+  .border();
+  z-index: 2;
 }
 
 .route__wrapper {
   padding: 63px 0 35px 0;
   .wrapper();
+  margin-top: -30px;
 
   @media (min-width: @tablet-width) {
-    padding: 102px 0 84px 0;
+    padding: 124px 0 84px 0;
+    margin-top: -54px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 116px 0 56px 0;
+    margin-top: -61px;
 
     display: flex;
     justify-content: space-between;
@@ -25,6 +30,7 @@
   text-transform: uppercase;
   color: @blue2;
   margin-bottom: 32px;
+  margin-left: 60px;
   max-width: 143px;
 
   @media (min-width: @tablet-width) {
@@ -32,11 +38,46 @@
     line-height: 28px;
     max-width: none;
     margin-bottom: 44px;
+    margin-left: 85px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
-    margin-left: 271px;
+    margin-left: 346px;
+  }
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    top: 0;
+    left: -60px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    background-color: @dark-blue;
+    border-radius: 50%;
+    background-position: center;
+
+
+    @media (min-width: @tablet-width) {
+      width: 68px;
+      height: 68px;
+      top: -20px;
+      left: -85px;
+      background-size: 31px 31px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 90px;
+      height: 90px;
+      top: -30px;
+      left: -120px;
+      background-size: 41px 41px;
+    }
   }
 }
 

@@ -1,20 +1,24 @@
 .travelers {
   background-color: @blue3;
+  .border();
+  z-index: 5;
 }
 
 .travelers__wrapper {
   padding: 100px 0 30px 0;
   .wrapper();
+  margin-top: -30px;
 
   @media (min-width: @tablet-width) {
     padding: 208px 0 87px 0;
+    margin-top: -67px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 231px 0 134px 0;
+    margin-top: -101px;
 
     display: grid;
-
     grid-template-columns: 498px 630px;
     column-gap: 193px;
     grid-template-rows: repeat(2, auto);
@@ -69,6 +73,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: none;
     margin-bottom: 42px;
 
     &--bold {
@@ -103,6 +108,7 @@
   margin: 0 auto;
   margin-top: -60px;
   margin-bottom: 10px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 285px;
@@ -112,6 +118,7 @@
 }
 
 .travelers__avatar {
+  display: block;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 
@@ -120,6 +127,17 @@
 
   @media (min-width: @tablet-width) {
     width: 285px;
+  }
+}
+
+.travelers__flags {
+  position: absolute;
+  top: 317px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    top: 330px;
   }
 }
 
@@ -207,6 +225,7 @@
 
 .travelers__transpotrs-list {
   .list();
+  justify-content: center;
 }
 
 .travelers__to-all {

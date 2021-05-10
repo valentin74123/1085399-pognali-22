@@ -160,7 +160,9 @@
         <div class="about__wrapper">
           <div class="about__text-wrapper">
             <h2 class="about__title text-title non-margin">О сервисе</h2>
-            <p class="about__description non-margin">Любое путешествие веселее<span>&nbsp;&nbsp;&nbsp;</span> с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> и черпайте вдохновение в чужих.</p>
+              <p class="about__description non-margin">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой!
+                Делитесь своими идеями путешествий<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> и черпайте вдохновение в чужих.
+              </p>
             <p class="about__description about__description--bold non-margin">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
             <a class="about__to-all non-link-decoration button-index" href="">
               Подробнее
@@ -220,7 +222,7 @@
         <div class="travelers__wrapper">
           <div class="travelers__text-wrapper">
             <h2 class="travelers__title text-title non-margin">Попутчики</h2>
-            <p class="travelers__description non-margin">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="travelers__description non-margin">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а<span>&nbsp;</span>другому маршрут для хайкинга.</p>
             <p class="travelers__description travelers__description--bold non-margin">Теперь можно легко найти единомышленников!</p>
           </div>
           <ul class="travelers__list">
@@ -228,7 +230,8 @@
               <div class="travelers__level">
                 <div class="level level--index">
                   <svg width="65" height="65">
-                    <circle class="level__circle level__circle--index level__circle--frisova" r="29" cx="31" cy="31" fill="transparent" stroke="#FF8D30" stroke-width="4"/>
+                    <circle class="level__circle" r="29" cx="31" cy="31" fill="transparent" stroke="#FF8D30" stroke-width="4"
+                    stroke-dashoffset="65" stroke-dasharray="195 5" />
                   </svg>
                   <div class="level__info level__info--index">
                     <p class="level__number level__number--index non-margin">99</p>
@@ -290,7 +293,8 @@
               <div class="travelers__level">
                 <div class="level level--index">
                   <svg width="65" height="65">
-                    <circle class="level__circle level__circle--index level__circle--demin" r="29" cx="31" cy="31" fill="transparent" stroke="#FF8D30" stroke-width="4"/>
+                    <circle class="level__circle" r="29" cx="31" cy="31" fill="transparent" stroke="#FF8D30" stroke-width="4"
+                    stroke-dashoffset="65" stroke-dasharray="170 30" />
                   </svg>
                   <div class="level__info level__info--index">
                     <p class="level__number level__number--index non-margin">80</p>
@@ -379,33 +383,6 @@
             </div>
             Показать тарифы для бизнеса
           </a>
-
-          <section class="business-tariff">
-            <div class="business-tariff__wraper">
-              <h2 class="business-tariff__title text-title non-margin">Бизнес-тарифы</h2>
-              <ul class="business-tariff__list">
-                <li class="business-tariff__item">
-                  <p class="business-tariff__text non-margin">Реклама у блоггера</p>
-                  <p class="business-tariff__text non-margin">300 000 руб./пост</p>
-                </li>
-                <li class="business-tariff__item">
-                  <p class="business-tariff__text non-margin">Накрутка подписчиков</p>
-                  <p class="business-tariff__text non-margin">от 1 руб./шт.</p>
-                </li>
-                <li class="business-tariff__item">
-                  <p class="business-tariff__text non-margin">Лайки от ботов</p>
-                  <p class="business-tariff__text non-margin">от 20 коп./лайк</p>
-                </li>
-                <li class="business-tariff__item">
-                  <p class="business-tariff__text non-margin">Ваш продакт-плейсмент</p>
-                  <p class="business-tariff__text non-margin">Индивидуально</p>
-                </li>
-              </ul>
-              <button class="business-tariff__button">
-                Закрыть окно
-              </button>
-            </div>
-          </section>
         </div>
       </section>
 
@@ -507,6 +484,33 @@
         </div>
       </div>
     </footer>
+
+    <section class="business-tariff">
+      <div class="business-tariff__wraper">
+        <h2 class="business-tariff__title text-title non-margin">Бизнес-тарифы</h2>
+        <ul class="business-tariff__list">
+          <li class="business-tariff__item">
+            <p class="business-tariff__text non-margin">Реклама у блоггера</p>
+            <p class="business-tariff__text non-margin">300 000 руб./пост</p>
+          </li>
+          <li class="business-tariff__item">
+            <p class="business-tariff__text non-margin">Накрутка подписчиков</p>
+            <p class="business-tariff__text non-margin">от 1 руб./шт.</p>
+          </li>
+          <li class="business-tariff__item">
+            <p class="business-tariff__text non-margin">Лайки от ботов</p>
+            <p class="business-tariff__text non-margin">от 20 коп./лайк</p>
+          </li>
+          <li class="business-tariff__item">
+            <p class="business-tariff__text non-margin">Ваш продакт-плейсмент</p>
+            <p class="business-tariff__text non-margin">Индивидуально</p>
+          </li>
+        </ul>
+        <button class="business-tariff__button">
+          Закрыть окно
+        </button>
+      </div>
+    </section>
 
     <script>
       const pageHeader = document.querySelector('.page-header');
