@@ -6,9 +6,11 @@
   text-align: center;
 }
 
-.social__item {
+.social__link {
+  display: block;
   background-color: @yellow;
   border-radius: 50%;
+
   width: 45px;
   height: 45px;
 
@@ -23,6 +25,46 @@
   }
 
   &:active {
-    opacity: 0.3;
+    fill-opacity: 0.3;
+  }
+}
+
+.social__icon {
+  &--facebook {
+    padding-top: 12px;
+    width: 11px;
+    height: 21px;
+  }
+
+  &--vkontakte {
+    padding-top: 17px;
+    width: 23px;
+    height: 12px;
+  }
+
+  &--instagram {
+    padding-top: 14px;
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--facebook {
+      padding-top: 18px;
+      width: 14px;
+      height: 26px;
+    }
+
+    &--vkontakte {
+      padding-top: 22px;
+      width: 28px;
+      height: 18px;
+    }
+
+    &--instagram {
+      padding-top: 20px;
+      width: 22px;
+      height: 22px;
+    }
   }
 }
