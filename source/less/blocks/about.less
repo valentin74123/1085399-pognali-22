@@ -1,5 +1,7 @@
 .about {
   background-color: @blue3;
+  .border();
+  z-index: 7;
 }
 
 .about__wrapper {
@@ -40,14 +42,10 @@
   .text();
   color: @white;
   margin-bottom: 20px;
-  max-width: 209px;
+  max-width: 224px;
 
   &--bold {
     font-weight: bold;
-  }
-
-  & span:nth-child(2) {
-    display: none;
   }
 
   @media (min-width: @tablet-width) {
@@ -55,14 +53,6 @@
     line-height: 33px;
     max-width: 300px;
     margin-bottom: 31px;
-
-    & span:nth-child(1) {
-      display: none;
-    }
-
-    & span:nth-child(2) {
-      display: inline;
-    }
 
     &--bold {
       font-size: 21px;
@@ -74,10 +64,6 @@
   @media (min-width: @desktop-width) {
     max-width: 619px;
     margin-bottom: 38px;
-
-    & span:nth-child(2) {
-      display: none;
-    }
 
     &--bold {
       max-width: 425px;

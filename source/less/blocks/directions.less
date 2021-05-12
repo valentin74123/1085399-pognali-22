@@ -1,17 +1,22 @@
 .directions {
   background-color: @light-gray;
+  .border();
+  z-index: 6;
 }
 
 .directions__wrapper {
   padding: 100px 0 35px 0;
   .wrapper();
+  margin-top: -30px;
 
   @media (min-width: @tablet-width) {
     padding: 149px 0 80px 0;
+    margin-top: -76px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 249px 0 138px 0;
+    margin-top: -88px;
 
     display: grid;
     grid-template-columns: 630px 379px;
@@ -91,6 +96,7 @@
   width: 270px;
   margin: 0 auto;
   margin-bottom: 10px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     .margin();
@@ -98,7 +104,7 @@
     display: grid;
     grid-template-columns: 432px 184px;
     grid-template-rows: 1fr;
-    position: relative;
+
     margin-bottom: 11px;
   }
 
@@ -109,6 +115,7 @@
 }
 
 .directions__photo {
+  display: block;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
@@ -128,22 +135,30 @@
 }
 
 .directions__flag {
+  position: absolute;
+  top: 86px;
+  left: 25px;
+  z-index: 2;
+
   @media (min-width: @tablet-width) {
-    position: absolute;
     width: 70px;
     height: 47px;
     top: 17px;
+    left: auto;
     right: 150px;
   }
 }
 
 .directions__info {
+  position: relative;
   background-color: @white;
   padding: 25px 24px;
   border-radius: 10px;
+  margin-top: -10px;
+
 
   @media (min-width: @tablet-width) {
-
+    margin-top: 0;
     max-width: 432px;
     padding: 30px 205px 20px 26px;
     border-radius: 20px;

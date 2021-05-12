@@ -1,4 +1,11 @@
 .business-tariff {
+  position: fixed;
+  display: none;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
   width: 270px;
   background-color: @white;
   margin: 0 auto;
@@ -51,15 +58,43 @@
 .business-tariff__item {
   .text();
   color: @dark-gray;
-  margin-bottom: 22px;
+  padding-top: 11px;
+  margin-bottom: 11px;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 219px;
+    height: 1px;
+    background-color: @light-gray9;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 22px;
     line-height: 28px;
-    margin-bottom: 27px;
+    padding-top: 14px;
+    margin-bottom: 14px;
 
     display: flex;
     justify-content: space-between;
+
+    &::after {
+      width: 506px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 12px;
+    margin-bottom: 15px;
+
+
+    &::after {
+      width: 630px;
+    }
   }
 }
 

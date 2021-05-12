@@ -1,17 +1,22 @@
 .invite-form {
   background-color: @blue3;
+  .border();
+  z-index: 3;
 }
 
 .invite-form__wrapper {
-  padding: 105px 0 30px 0;
+  padding: 100px 0 30px 0;
   .wrapper();
+  margin-top: -30px;
 
   @media (min-width: @tablet-width) {
     padding: 133px 0 60px 0;
+    margin-top: -57px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 208px 0 103px 0;
+    margin-top: -99px;
   }
 }
 
@@ -40,7 +45,7 @@
     max-width: 618px;
     margin-bottom: 65px;
 
-    & br {
+    br {
       display: none;
     }
 
@@ -54,7 +59,7 @@
     margin-bottom: 60px;
   }
 
-  & a {
+  a {
     color: @yellow;
     text-decoration: underline;
 
@@ -80,6 +85,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 70px;
+    .margin();
   }
 }
 
@@ -92,23 +98,23 @@
 
   min-width: 54px;
 
-  padding: 22px 141px 22px 25px;
+  padding: 22px 25px;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 
   @media (min-width: @tablet-width) {
     font-size: 24px;
     line-height: 24px;
-    min-width: 76px;
+    min-width: 474px;
     min-height: 72px;
 
-    padding: 0 431px 0 36px;
+    padding: 0 36px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 623px;
+    min-width: 770px;
   }
 
   &:hover {
@@ -142,7 +148,7 @@
   z-index: 5;
   margin-left: -14px;
 
-  & span {
+  span {
     display: none;
 
     @media (min-width: @desktop-width) {
@@ -160,7 +166,7 @@
 
   @media (min-width: @desktop-width) {
     min-width: 330px;
-    min-height: 81px;
+    min-height: 80px;
   }
 }
 
@@ -175,7 +181,7 @@
     line-height: 30px;
     margin-bottom: 40px;
 
-    & br {
+    br {
       display: none;
     }
   }

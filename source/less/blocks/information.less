@@ -1,11 +1,13 @@
 .information {
-  background-color: @blue3;
+  background-color: @blue;
 }
 
 .information__wrapper {
   .wrapper();
+  padding-top: 94px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 162px;
     width: 688px;
   }
 
@@ -17,7 +19,6 @@
 }
 
 .information__header {
-  background-color: @blue;
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
@@ -41,6 +42,7 @@
   line-height: 40px;
   color: @white;
 
+  margin-bottom: 313px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -117,6 +119,8 @@
 
 .information__list {
   .list();
+  counter-reset: list;
+
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -147,7 +151,8 @@
 
   &::before {
     position: absolute;
-    content: "";
+    counter-increment: list;
+    content: counter(list);
     right: 21px;
     font-style: normal;
     font-weight: bold;
@@ -186,10 +191,6 @@
 .information__item:nth-child(4n + 1) {
   background-color: @orange;
 
-  &::before {
-    content: "1";
-  }
-
   @media (min-width: @tablet-width) {
     margin-left: auto;
     padding-right: 122px;
@@ -212,10 +213,6 @@
 .information__item:nth-child(4n + 2) {
   background-color: @orange-light;
 
-  &::before {
-    content: "2";
-  }
-
   @media (min-width: @tablet-width) {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -234,10 +231,6 @@
 
 .information__item:nth-child(4n + 3) {
   background-color: @yellow-dark;
-
-  &::before {
-    content: "3";
-  }
 
   @media (min-width: @tablet-width) {
     margin-left: auto;
@@ -260,10 +253,6 @@
 
 .information__item:nth-child(4n + 4) {
   background-color: @yellow;
-
-  &::before {
-    content: "4";
-  }
 
   @media (min-width: @tablet-width) {
     border-top-right-radius: 0;
