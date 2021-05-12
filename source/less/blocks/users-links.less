@@ -79,6 +79,34 @@
   }
 
   @media (min-width: @desktop-width) {
+    &--tel,
+    &--mail {
+      display: block;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 0;
+    }
+
+    &--tel {
+      background-color: @orange;
+
+      &:hover,
+      &:focus {
+        background-color: @dark-orange2;
+      }
+    }
+
+    &--mail {
+      background-color: @yellow-dark;
+
+      &:hover,
+      &:focus {
+        background-color: @orange;
+      }
+    }
+
+
     &--main-nav {
       span {
         display: none;
@@ -95,50 +123,29 @@
   }
 }
 
-.users-links__icon {
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  margin-right: 16px;
+.users-links__icons {
+  @media (max-width: @tablet-width-only) {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 16px;
 
-  background-color: @dark-blue;
+    background-color: @dark-blue;
 
-  @media (min-width: @tablet-width) {
-    width: 68px;
-    height: 68px;
-    margin-right: 22px;
+    @media (min-width: @tablet-width) {
+      width: 68px;
+      height: 68px;
+      margin-right: 22px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    width: 90px;
-    height: 90px;
-    margin-right: 31px;
-  }
-
-  .users-links--main-nav & {
+  &--form {
     @media (min-width: @desktop-width) {
-      width: 50px;
-      height: 50px;
-      margin: 0;
-      vertical-align: middle;
-
-      &--tel {
-        background-color: @orange;
-
-        &:hover,
-        &:focus {
-          background-color: @dark-orange2;
-        }
-      }
-
-      &--mail {
-        background-color: @yellow-dark;
-
-        &:hover,
-        &:focus {
-          background-color: @orange;
-        }
-      }
+      border-radius: 50%;
+      background-color: @dark-blue;
+      width: 90px;
+      height: 90px;
+      margin-right: 31px;
     }
   }
 }
