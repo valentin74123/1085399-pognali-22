@@ -1,5 +1,5 @@
 .profile-info {
-  background-color: @light-gray;
+  background-color: inherit;
 }
 
 .profile-info__wrapper {
@@ -20,6 +20,9 @@
 
   @media (min-width: @desktop-width) {
     .padding-form-page();
+    margin-top: -256px;
+    position: relative;
+    z-index: 2;
 
     grid-template-columns: auto 139px 285px;
     column-gap: normal;

@@ -14,6 +14,14 @@
   width: 220px;
   padding: 11px;
 
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+
+    padding: 25px 26px 23px 26px;
+  }
+
   &:hover,
   &:focus {
     border: 1px solid @dark-gray3;
@@ -23,13 +31,5 @@
     color: @white;
     border: 1px solid inherit;
     background-color: @blue3;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 100%;
-    font-size: 20px;
-    line-height: 20px;
-
-    padding: 25px 26px 23px 26px;
   }
 }

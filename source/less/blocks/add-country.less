@@ -1,5 +1,30 @@
-.add-country__botton {
+.add-country__button {
   margin-bottom: 25px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 49px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid @ligh-gray3;
+    background-color: @light-gray;
+
+    @media (min-width: @tablet-width) {
+      right: -31px;
+      width: 12px;
+      height: 12px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: -56px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 50px;

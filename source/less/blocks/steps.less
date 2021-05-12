@@ -139,6 +139,16 @@
     &--two {
       margin-bottom: 42px;
       max-width: 415px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: -326px;
+        right: 20px;
+        width: 1px;
+        height: 326px;
+        background-color: @light-gray9;
+      }
     }
 
     position: relative;
@@ -173,6 +183,14 @@
 
       grid-column-start: 1;
       grid-column-end: 2;
+
+      &::before {
+        bottom: -540px;
+        right: -364px;
+        width: 1px;
+        height: 540px;
+        background-color: @light-gray9;
+      }
     }
 
     &--three {
@@ -476,6 +494,7 @@
   }
 
   &--add {
+    margin-top: -30px;
     grid-column-start: 1;
     grid-column-end: 3;
 

@@ -1,4 +1,6 @@
 .choose-country {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 369px 149px;
@@ -13,6 +15,53 @@
   border-radius: 4px;
   margin-bottom: 22px;
 
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 49px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid @ligh-gray3;
+
+    @media (min-width: @tablet-width) {
+      right: -33px;
+      width: 12px;
+      height: 12px;
+      background-color: @white;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: -57px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: -10px;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background: url("");
+
+    border-radius: 50%;
+    filter: opacity(1);
+    background-color: @light-gray;
+
+    @media (min-width: @tablet-width) {
+      top: 50%;
+      transform: translateY(-50%);
+      right: -150px;
+      background-color: initial;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 13px;
 
@@ -22,6 +71,10 @@
 }
 
 .choose-country__modal {
+  position: absolute;
+  z-index: 2;
+  top: 47px;
+
   width: 220px;
   background-color: @white;
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
@@ -32,6 +85,7 @@
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
+    top: -13px;
     display: flex;
     justify-content: space-between;
     width: 525px;
@@ -150,7 +204,7 @@
   }
 }
 
-.choose-country__botton {
+.choose-country__button-country {
   .text();
   color: @dark-gray;
   padding-bottom: 5px;
@@ -170,5 +224,31 @@
 
   &:active {
     color: rgba(@blue2, 0.3);
+  }
+}
+
+
+.choose-country--closed .choose-country__modal {
+  display: none;
+}
+
+.choose-country--opened .choose-country__button {
+  background-color: @blue3;
+  color: @white;
+  padding: 14px 17px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 24px 24px;
+  }
+}
+
+.choose-country--opened .choose-country__button::before,
+.choose-country--opened .choose-country__button::after {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }

@@ -1,10 +1,20 @@
 .page-heading {
   background-color: @dark-blue2;
+  .border-bottom();
 }
 
 .page-heading__inner {
   padding-top: 95px;
   .wrapper();
+
+
+  @media (min-width: @tablet-width) {
+    padding-top: 224px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 125px;
+  }
 
   &--catalog {
     @media (min-width: @tablet-width) {
