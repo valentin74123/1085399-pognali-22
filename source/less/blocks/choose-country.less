@@ -72,8 +72,8 @@
 
 .choose-country__modal {
   position: absolute;
-  z-index: 2;
-  top: 47px;
+  z-index: 10;
+  top: 41px;
 
   width: 220px;
   background-color: @white;
@@ -85,7 +85,7 @@
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    top: -13px;
+    top: 70px;
     display: flex;
     justify-content: space-between;
     width: 525px;
@@ -94,7 +94,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
 
-    position: relative;
+    // position: relative;
 
     &::before {
       position: absolute;
@@ -235,7 +235,7 @@
 .choose-country--opened .choose-country__button {
   background-color: @blue3;
   color: @white;
-  padding: 14px 17px;
+  padding: 11px 17px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 

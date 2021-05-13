@@ -114,7 +114,14 @@
               </div>
             </div>
             <img class="profile-info__avatar" src="https://via.placeholder.com/100x100" alt="">
-            <input class="profile-info__button button-form button-form--change" type="file">
+
+            <div class="profile-info__button button-file">
+              <input class="button-file__input" type="file" name="file-input" id="file-input" multiple>
+              <label class="button-file__text" for="file-input">
+                <span>Сменить</span> фото
+              </label>
+            </div>
+
             <p class="profile-info__title profile-info__title--tags non-margin">Тэги</p>
             <textarea class="profile-info__hashtags" name="profile-hashtags" id="profile-hashtags">#бургер #бар #футбол #концерт #крафт</textarea>
             <label class="profile-info__title profile-info__title--transport" for="profile-hashtags">Транспорт</label>
