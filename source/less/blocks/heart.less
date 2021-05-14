@@ -1,13 +1,25 @@
+.heart {
+  display: flex;
+  align-items: center;
+  margin-left: -40px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+}
+
 .heart__description {
   position: relative;
   cursor: pointer;
+  width: 31px;
+  height: 31px;
 }
 
 .heart__description::before {
   position: absolute;
   content: "";
   top: 0;
-  left: 50px;
+  left: 0;
   width: 31px;
   height: 31px;
   z-index: 1;
@@ -20,16 +32,11 @@
 
 
   @media (min-width: @tablet-width) {
-    top: -25px;
-    left: 0;
+    top: -10px;
     width: 50px;
     height: 50px;
     background-size: 20px 20px;
   }
-}
-
-.heart__checkbox[type="checkbox"] {
-  display: none;
 }
 
 .heart__checkbox[type="checkbox"]:checked ~ .heart__description::before {
@@ -55,4 +62,24 @@
 
 .heart__checkbox[type="checkbox"]:active ~ .heart__description::before {
   opacity: 0.1;
+}
+
+.heart__count-like {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 10px;
+
+  color: @blue;
+  text-transform: uppercase;
+  align-self: center;
+  display: block;
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+  }
 }
