@@ -1,0 +1,62 @@
+.button-file {
+  position: relative;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-bottom: 27px;
+  }
+}
+
+.button-file__input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.button-file__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  color: @blue;
+
+  background: @light-gray4;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding: 22px 20px 20px 20px;
+    border-radius: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 16px 20px 14px 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 150px;
+
+    span {
+      display: none;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background: @gray3;
+  }
+
+  &:active {
+    color: rgba(@blue, 0.3);
+    background: @light-gray4;
+  }
+}

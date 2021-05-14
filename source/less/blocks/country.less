@@ -8,11 +8,85 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 50px;
   }
+
+  &--bosnia {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 12px;
+      left: -16px;
+      width: 2px;
+      height: 301px;
+      background-color: @blue2;
+    }
+
+    @media (min-width: @tablet-width) {
+      &::before {
+        top: 19px;
+        left: auto;
+        right: 6px;
+        height: 274px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      &::before {
+        right: 226px;
+        height: 294px;
+      }
+    }
+  }
 }
 
 .country__wrapper {
   display: flex;
   align-items: center;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: -8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: @blue2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: -16px;
+    width: 11px;
+    height: 2px;
+    background-color: @blue2;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      left: auto;
+      right: 0;
+      width: 14px;
+      height: 14px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      right: 220px;
+    }
+  }
 }
 
 .country__name {
@@ -20,6 +94,8 @@
   line-height: 18px;
   font-weight: 500;
   color: @blue2;
+
+  margin-left: 8px;
 
   @media (min-width: @tablet-width) {
     font-weight: bold;
@@ -40,7 +116,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 131px;
+    margin-right: 116px;
   }
 }
 
@@ -56,7 +132,7 @@
   margin-top: 14px;
   height: 220px;
   padding: 12px 27px 0 14px;
-  width: 187px;
+  width: 177px;
 
   &:hover,
   &:focus {

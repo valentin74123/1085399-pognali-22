@@ -7,97 +7,102 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-img" src="https://via.placeholder.com/96x15" alt="Логотип «‎Погнали»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html" class="non-link-decoration">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="non-link-decoration">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a class="non-link-decoration">Попутчики</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list users-links users-links--main-nav">
-            <li class="users-links__item">
-              <a class="users-links__login js-login non-link-decoration button-yellow button-yellow--login-nav" href="login.html">
-                Авторизация
-              </a>
-            </li>
+    <header class="page-header page-header--opened">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-img" src="https://via.placeholder.com/96x15" alt="Логотип «‎Погнали»">
+        </a>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-            <li class="users-links__item">
-              <a class="users-links__info users-links__info--main-nav" href="tel:88005558628">
-                <div class="users-links__icons">
-                  <svg class="users-links__icon users-links__icon--tel" width="17" height="15">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html" class="non-link-decoration">О сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html" class="non-link-decoration">Направления</a>
+              </li>
+              <li class="site-list__item">
+                <a class="non-link-decoration">Попутчики</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list users-links users-links--main-nav">
+              <li class="users-links__item users-links__item--authorization">
+                <a class="users-links__login js-login non-link-decoration button-yellow button-yellow--login-nav" href="login.html">
+                  Авторизация
+                </a>
+              </li>
+
+              <li class="users-links__item">
+                <a class="users-links__info users-links__info--tel users-links__info--main-nav" href="tel:88005558628">
+                  <div class="users-links__icons">
+                    <svg class="users-links__icon" width="17" height="15">
+
+                    </svg>
+                  </div>
+                  <span>8 800 555-86-28</span>
+                </a>
+              </li>
+
+              <li class="users-links__item">
+                <a class="users-links__info users-links__info--mail users-links__info--main-nav" href="mailto:mail@htmlacademy.ru">
+                  <div class="users-links__icons">
+                    <svg class="users-links__icon" width="18" height="13">
+
+                    </svg>
+                  </div>
+                  <span>mail@htmlacademy.ru</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="">
+                  <svg width="11" height="21">
 
                   </svg>
-                </div>
-                <span>8 800 555-86-28</span>
-              </a>
-            </li>
-
-            <li class="users-links__item">
-              <a class="users-links__info users-links__info--main-nav" href="mailto:mail@htmlacademy.ru">
-                <div class="users-links__icons">
-                  <svg class="users-links__icon users-links__icon--mail" width="18" height="13">
+                  <span class="visually-hidden">Мы в Фейсбуке</span>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="">
+                  <svg width="23" height="12">
 
                   </svg>
-                </div>
-                <span>mail@htmlacademy.ru</span>
-              </a>
-            </li>
-          </ul>
+                  <span class="visually-hidden">Мы в Вконтакте</span>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="">
+                  <svg width="18" height="18">
 
-          <ul class="main-nav__list social-list">
-            <li class="social-list__item">
-              <a class="social-list__link" href="">
-                <svg width="11" height="21">
-
-                </svg>
-                <span class="visually-hidden">Мы в Фейсбуке</span>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="">
-                <svg width="23" height="12">
-
-                </svg>
-                <span class="visually-hidden">Мы в Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="">
-                <svg width="18" height="18">
-
-                </svg>
-                <span class="visually-hidden">Мы в Инстаграме</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+                  </svg>
+                  <span class="visually-hidden">Мы в Инстаграме</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <main class="page-main  page-main--catalog">
-      <div class="page-heading">
+    <main class="page-main page-main--catalog">
+      <div class="page-heading page-heading--catalog">
         <article class="page-heading__inner page-heading__inner--catalog">
           <h1 class="page-heading__title page-heading__title--catalog non-margin">Попутчики</h1>
           <a class="page-heading__to-main non-link-decoration" href="index.html">На главную</a>
         </article>
       </div>
 
-      <section class="country-filter country-filter--opened country-filter--nojs">
+      <section class="country-filter country-filter--closed country-filter--nojs">
         <div class="country-filter__wrapper">
           <h2 class="country-filter__title non-margin">Фильтрация по странам:</h2>
+
           <ul class="country-filter__list">
             <li class="country-filter__item">
               <a class="country-filter__country country-filter__country--active non-link-decoration" href="">Европа</a>
@@ -112,8 +117,9 @@
               <a class="country-filter__country non-link-decoration" href="">Острова</a>
             </li>
           </ul>
+
           <button class="country-filter__uncover" type="button">
-            Показать все
+            <span>Показать все</span>
           </button>
         </div>
 
@@ -626,13 +632,15 @@
               <a class="travelers-profile__avatar-block" href=""><img class="travelers-profile__avatar" src="https://via.placeholder.com/70x70" alt=""></a>
 
               <a class="travelers-profile__name-block non-link-decoration" href=""><h3 class="travelers-profile__name non-margin">Таня Фрисова</h3></a>
-              <article class="travelers-profile__heart heart">
-                <input class="heart__checkbox" type="checkbox" id="heart-frisova" name="heart-frisova" checked>
+
+              <div class="travelers-profile__heart heart">
+                <input class="visually-hidden heart__checkbox" type="checkbox" id="heart-frisova" name="heart-frisova" checked>
                 <label class="heart__description" for="heart-frisova">
                   <span class="visually-hidden">В избранное</span>
                 </label>
-              </article>
-              <p class="travelers-profile__distance non-margin">1,5 М</p>
+                <p class="heart__count-like non-margin">1,5 М</p>
+              </div>
+
               <p class="travelers-profile__hashtags non-margin">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
 
               <p class="travelers-profile__description non-margin">хочет посетить:</p>
@@ -705,13 +713,15 @@
               <a class="travelers-profile__avatar-block" href=""><img class="travelers-profile__avatar" src="https://via.placeholder.com/70x70" alt=""></a>
 
               <a class="travelers-profile__name-block non-link-decoration" href=""><h3 class="travelers-profile__name non-margin">Петя Демин</h3></a>
-              <article class="travelers-profile__heart heart">
-                <input class="heart__checkbox" type="checkbox" id="heart-dimin" name="heart-dimin">
+
+              <div class="travelers-profile__heart heart">
+                <input class="visually-hidden heart__checkbox" type="checkbox" id="heart-dimin" name="heart-dimin">
                 <label class="heart__description" for="heart-dimin">
                   <span class="visually-hidden">В избранное</span>
                 </label>
-              </article>
-              <p class="travelers-profile__distance non-margin">1500</p>
+                <p class="heart__count-like non-margin">1500</p>
+              </div>
+
               <p class="travelers-profile__hashtags non-margin">#бургер #бар #футбол #концерт #крафт</p>
 
               <p class="travelers-profile__description travelers-profile__description--visit non-margin">хочет посетить:</p>
@@ -781,13 +791,15 @@
               <a class="travelers-profile__avatar-block" href=""><img class="travelers-profile__avatar" src="https://via.placeholder.com/70x70" alt=""></a>
 
               <a class="travelers-profile__name-block non-link-decoration" href=""><h3 class="travelers-profile__name non-margin">Марк Смолов</h3></a>
-              <article class="travelers-profile__heart heart">
-                <input class="heart__checkbox" type="checkbox" id="heart-smolov" name="heart-smolov">
+
+              <div class="travelers-profile__heart heart">
+                <input class="visually-hidden heart__checkbox" type="checkbox" id="heart-smolov" name="heart-smolov">
                 <label class="heart__description" for="heart-smolov">
                   <span class="visually-hidden">В избранное</span>
                 </label>
-              </article>
-              <p class="travelers-profile__distance non-margin">170</p>
+                <p class="heart__count-like non-margin">170</p>
+              </div>
+
               <p class="travelers-profile__hashtags non-margin">#рэп #тату #хайпбист #кроссовки #суприм</p>
 
               <p class="travelers-profile__description travelers-profile__description--visit non-margin">хочет посетить:</p>
@@ -860,13 +872,15 @@
               <a class="travelers-profile__avatar-block" href=""><img class="travelers-profile__avatar" src="https://via.placeholder.com/70x70" alt=""></a>
 
               <a class="travelers-profile__name-block non-link-decoration" href=""><h3 class="travelers-profile__name travelers-profile__name--online non-margin">Лариса Роговая</h3></a>
-              <article class="travelers-profile__heart heart">
-                <input class="heart__checkbox" type="checkbox" id="heart-rogovaya" name="heart-rogovaya">
+
+              <div class="travelers-profile__heart heart">
+                <input class="visually-hidden heart__checkbox" type="checkbox" id="heart-rogovaya" name="heart-rogovaya">
                 <label class="heart__description" for="heart-rogovaya">
                   <span class="visually-hidden">В избранное</span>
                 </label>
-              </article>
-              <p class="travelers-profile__distance non-margin">23</p>
+                <p class="heart__count-like non-margin">23</p>
+              </div>
+
               <p class="travelers-profile__hashtags non-margin">#образование #карьера #учеба #линкедин</p>
 
               <p class="travelers-profile__description travelers-profile__description--visit non-margin">хочет посетить:</p>
@@ -934,7 +948,7 @@
           </ul>
 
           <div class="travelers-profiles__yet">
-            <a class="travelers-profiles__yet-botton button-more non-link-decoration" href="">Показать еще</a>
+            <a class="travelers-profiles__yet-button button-more non-link-decoration" href="">Показать еще</a>
           </div>
 
           <div class="travelers-profiles__pagenavi pagenavi">
@@ -1026,5 +1040,49 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const pageHeader = document.querySelector('.page-header');
+      const navMain = document.querySelector('.main-nav');
+      const navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          pageHeader.classList.add('page-header--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          pageHeader.classList.remove('page-header--opened');
+        }
+      });
+
+
+      const countryFilter = document.querySelector('.country-filter');
+      const countryButton = document.querySelector('.country-filter__uncover');
+      const countryButtonClose = document.querySelector('.country-filter__button');
+
+      countryFilter.classList.remove('country-filter--nojs');
+
+      countryButton.addEventListener('click', function() {
+        if (countryFilter.classList.contains('country-filter--closed')) {
+          countryFilter.classList.remove('country-filter--closed');
+          countryFilter.classList.add('country-filter--opened');
+        } else {
+          countryFilter.classList.add('country-filter--closed');
+          countryFilter.classList.remove('country-filter--opened');
+        }
+      });
+
+      countryButtonClose.addEventListener('click', function() {
+        if (countryFilter.classList.contains('country-filter--opened')) {
+          countryFilter.classList.add('country-filter--closed');
+          countryFilter.classList.remove('country-filter--opened');
+        }
+      });
+    </script>
   </body>
 </html>
