@@ -32,9 +32,29 @@
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
+    max-width: 164px;
     margin: 0;
     display: flex;
     justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 200px;
+  }
+}
+
+.page-footer__logo-img {
+  width: 96px;
+  height: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    height: 55px;
   }
 }
 
