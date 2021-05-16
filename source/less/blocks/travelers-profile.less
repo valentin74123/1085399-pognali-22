@@ -284,17 +284,14 @@
 }
 
 .travelers-profile__item {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 16px;
 
-  color: @blue2;
-  text-transform: uppercase;
   margin-bottom: 10px;
 
+  display: flex;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
-    display: flex;
+
     font-size: 20px;
     line-height: 20px;
     margin-right: 26px;
@@ -303,6 +300,39 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 12px;
+  }
+}
+
+.travelers-profile__flag {
+  width: 26px;
+  height: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 35px;
+    height: 24px;
+  }
+}
+
+.travelers-profile__city {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+
+  color: @blue2;
+  text-transform: uppercase;
+
+  margin-left: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 18px;
   }
 }
 
