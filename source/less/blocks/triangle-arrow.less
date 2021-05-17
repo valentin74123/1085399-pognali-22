@@ -1,8 +1,27 @@
 .triangle-arrow {
   fill: currentColor;
-  transform: scale(2.8, 2);
+  width: 14px;
+  height: 13px;
 
-  @media (min-width: @tablet-width) {
-    transform: scale(3, 2.2);
+  &--reg {
+    width: 14px;
+    height: 16px;
+  }
+
+  &--form-right,
+  &--form-left {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+
+  &--form-right {
+    padding-left: 10px;
+  }
+
+  &--form-left {
+    padding-right: 10px;
   }
 }

@@ -44,10 +44,14 @@
 }
 
 .checkbox__check[type="checkbox"]:checked ~ .checkbox__description::before {
-  background-image: url("");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-size: 9px 9px;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-size: 13px 13px;
+  }
 }
 
 .checkbox__check[type="checkbox"]:focus ~ .checkbox__description::before,

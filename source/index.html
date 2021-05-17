@@ -17,7 +17,7 @@
 
             <source media="(min-width: 1440px)"  srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-            <img class="page-header__logo-img page-header__logo-img--white" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип «Погнали»">
+            <img class="page-header__logo-img page-header__logo-img--white" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="15" alt="Логотип «Погнали»">
           </picture>
 
           <picture>
@@ -27,7 +27,7 @@
 
             <source media="(min-width: 1440px)"  srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-            <img class="page-header__logo-img page-header__logo-img--blue" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип «Погнали»">
+            <img class="page-header__logo-img page-header__logo-img--blue" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="15" alt="Логотип «Погнали»">
           </picture>
         </a>
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -314,35 +314,43 @@
 
                 <ul class="travelers__transpotrs-list transport-icons">
                   <li class="travelers__transpotrs-item transpotrs-hover">
-                    <svg class="transport-icons__icon transport-icons__icon--active" width="21" height="22">
-
-                    </svg>
-                    <div class="transpotrs-hover__hover-description">
-                      Авиаперелет
+                    <div class="transport-icons__icon-wrapper">
+                      <svg class="transport-icons__icon transport-icons__icon--active" width="20" height="21">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                      <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--plane">
+                        Авиаперелет
+                      </div>
                     </div>
                   </li>
                   <li class="travelers__transpotrs-item transpotrs-hover">
-                    <svg class="transport-icons__icon" width="17" height="19">
-
-                    </svg>
-                    <div class="transpotrs-hover__hover-description">
-                      Автотранспорт
+                    <div class="transport-icons__icon-wrapper">
+                      <svg class="transport-icons__icon" width="17" height="19">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                      <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bus">
+                        Автотранспорт
+                      </div>
                     </div>
                   </li>
                   <li class="travelers__transpotrs-item transpotrs-hover">
-                    <svg class="transport-icons__icon" width="21" height="16">
-
-                    </svg>
-                    <div class="transpotrs-hover__hover-description">
-                      Велосипед
+                    <div class="transport-icons__icon-wrapper">
+                      <svg class="transport-icons__icon" width="21" height="16">
+                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                      </svg>
+                      <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bike">
+                        Велосипед
+                      </div>
                     </div>
                   </li>
                   <li class="travelers__transpotrs-item transpotrs-hover">
-                    <svg class="transport-icons__icon" width="18" height="18">
-
-                    </svg>
-                    <div class="transpotrs-hover__hover-description">
-                      Пешком
+                    <div class="transport-icons__icon-wrapper">
+                      <svg class="transport-icons__icon" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                      <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--run">
+                        Пешком
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -381,35 +389,43 @@
 
                 <ul class="travelers__transpotrs-list transport-icons">
                   <li class="travelers__transpotrs-item transpotrs-hover">
-                    <svg class="transport-icons__icon transport-icons__icon--active" width="21" height="22">
-
-                    </svg>
-                    <div class="transpotrs-hover__hover-description">
-                      Авиаперелет
+                    <div class="transport-icons__icon-wrapper">
+                      <svg class="transport-icons__icon transport-icons__icon--active" width="20" height="21">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                      <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--plane">
+                        Авиаперелет
+                      </div>
                     </div>
                   </li>
                   <li class="travelers__transpotrs-item transpotrs-hover">
-                    <svg class="transport-icons__icon transport-icons__icon--active" width="17" height="19">
-
-                    </svg>
-                    <div class="transpotrs-hover__hover-description">
-                      Автотранспорт
+                    <div class="transport-icons__icon-wrapper">
+                      <svg class="transport-icons__icon transport-icons__icon--active" width="17" height="19">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                      <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bus">
+                        Автотранспорт
+                      </div>
                     </div>
                   </li>
                   <li class="travelers__transpotrs-item transpotrs-hover">
-                    <svg class="transport-icons__icon" width="21" height="16">
-
-                    </svg>
-                    <div class="transpotrs-hover__hover-description">
-                      Велосипед
+                    <div class="transport-icons__icon-wrapper">
+                      <svg class="transport-icons__icon" width="21" height="16">
+                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                      </svg>
+                      <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--bike">
+                        Велосипед
+                      </div>
                     </div>
                   </li>
                   <li class="travelers__transpotrs-item transpotrs-hover">
-                    <svg class="transport-icons__icon transport-icons__icon--active" width="18" height="18">
-
-                    </svg>
-                    <div class="transpotrs-hover__hover-description ">
-                      Пешком
+                    <div class="transport-icons__icon-wrapper">
+                      <svg class="transport-icons__icon transport-icons__icon--active" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                      <div class="transpotrs-hover__hover-description transpotrs-hover__hover-description--run">
+                        Пешком
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -463,7 +479,7 @@
             <input class="invite-form__email-input" type="email" name="email" placeholder="E-mail" required>
             <button class="invite-form__button button-index button-index--reg" type="submit">
               <span>Регистрация</span>
-              <svg class="triangle-arrow" width="14" height="14">
+              <svg class="triangle-arrow triangle-arrow--reg" width="14" height="14">
                 <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
               </svg>
             </button>
@@ -526,7 +542,7 @@
 
               <source media="(min-width: 1440px)"  srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-              <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип «Погнали»">
+              <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Логотип «Погнали»">
             </picture>
           </a>
         </div>

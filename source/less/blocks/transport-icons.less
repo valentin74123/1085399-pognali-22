@@ -2,13 +2,31 @@
   .list();
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.transport-icons__icon-wrapper {
+  // background-color: @light-gray;
+  // border-radius: 50%;
+  width: 30px;
+  height: 25px;
 }
 
 .transport-icons__icon {
-  background-color: @light-gray;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // transform: scale(0.8);
+  display: block;
+  // text-align: center;
+  margin: 0 auto;
+
+  // margin-top: 8px;
+  fill: rgba(@blue3, 0.15);
+
+  &--active {
+    fill: @blue3;
+  }
 
   @media (min-width: @tablet-width) {
     background-color: inherit;

@@ -11,6 +11,23 @@
     grid-template-columns: auto 223px;
     column-gap: 45px;
   }
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 45px;
+    right: 45px;
+    width: 8px;
+    height: 11px;
+    background: url("../img/small-arrow.svg") no-repeat;
+
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .countries__select {
@@ -33,14 +50,17 @@
   grid-row-end: 2;
 
   appearance: none;
-  background: url("");
-  background-size: 16px 11px;
+  background: url("../img/dropdown-form.svg") no-repeat right 15px center;
+  background-size: 12px 8px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
 
     padding: 25px 26px 23px 26px;
+
+    background: url("../img/dropdown-form.svg") no-repeat right 27px center;
+    background-size: 16px 11px;
   }
 }
 
@@ -109,29 +129,5 @@
   @media (min-width: @tablet-width) {
     width: 70px;
     height: 47px;
-  }
-}
-
-.countries__button-close {
-  position: absolute;
-  content: "";
-  top: -10px;
-  right: -10px;
-  width: 21px;
-  height: 21px;
-  border: none;
-  background: url("");
-
-  border-radius: 50%;
-  filter: opacity(1);
-  background-color: @light-gray;
-
-  @media (min-width: @tablet-width) {
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 21px;
-    height: 21px;
-    background-color: inherit;
   }
 }
