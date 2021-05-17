@@ -23,6 +23,30 @@
     column-gap: 171px;
     grid-template-rows: repeat(2, auto);
   }
+
+  position: relative;
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      right: -36px;
+      width: 288px;
+      height: 574px;
+      background-size: 288px 574px;
+      background-image: url("../img/flags-back@1x.png");
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/flags-back@2x.png");
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 176px;
+      right: 0;
+    }
+  }
 }
 
 .directions__text-wrapper {
@@ -89,6 +113,27 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: -1;
+  }
+
+  position: relative;
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      left: -36px;
+      top: -38px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: @light-gray6;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -71px;
+      left: -70px;
+    }
   }
 }
 

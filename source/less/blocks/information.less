@@ -1,20 +1,75 @@
 .information {
   background-color: @blue;
+  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 569px;
+  background-position: top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/globe-back-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: @dark-blue2;
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-size: 100% 612px;
+    background-position: center 382px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/globe-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @dark-blue3;
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-size: 100% 750px;
+    background-position: center top -98px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/globe-back-desktop@2x.jpg");
+    }
+  }
 }
 
 .information__wrapper {
   .wrapper();
   padding-top: 94px;
 
+  background-image: url("../img/traveller-illustration-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 192px 255px;
+  background-position: 70px 223px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/traveller-illustration-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     padding-top: 162px;
     width: 688px;
+
+    background-image: url("../img/traveller-illustration-tablet@1x.png");
+    background-size: 372px 451px;
+    background-position: 245px 407px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/traveller-illustration-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
     .wrapper();
     padding-top: 110px;
     padding-bottom: 123px;
+
+    background-image: url("../img/traveller-illustration-desktop@1x.png");
+    background-size: 431px 640px;
+    background-position: 545px 12px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/traveller-illustration-desktop@2x.png");
+    }
   }
 }
 
