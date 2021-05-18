@@ -5,16 +5,18 @@
   line-height: 20px;
   color: @blue2;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   letter-spacing: 0.05em;
   text-transform: uppercase;
   background-color: @gray4;
   border: none;
   border-radius: 20px;
 
-  display: block;
-  width: auto;
   padding: 11px 20px;
-  text-align: center;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -29,5 +31,18 @@
 
   &:active {
     color: rgba(@blue2, 0.3);
+  }
+}
+
+.button-hide__svg {
+  fill: currentColor;
+  width: 14px;
+  height: 14px;
+  margin-right: 11px;
+
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 24px;
+    margin-right: 18px;
   }
 }

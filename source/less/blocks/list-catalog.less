@@ -62,6 +62,15 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
   }
+
+  &:hover,
+  &:focus {
+    color: rgba(@black, 0.6);
+  }
+
+  &:active {
+    color: rgba(@black, 0.3);
+  }
 }
 
 .list-catalog__description::before {
@@ -86,7 +95,7 @@
 }
 
 .list-catalog__checkbox[type="checkbox"]:checked ~ .list-catalog__description::before {
-  background-image: url("");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-size: 9px 9px;
   background-position: center;
@@ -95,6 +104,18 @@
 .list-catalog__checkbox[type="checkbox"]:focus ~ .list-catalog__description::before,
 .list-catalog__checkbox[type="checkbox"]:hover ~ .list-catalog__description::before {
   background-color: rgba(@white, 0.6);
+
+  .list-catalog__description {
+    &:hover,
+    &:focus {
+      color: rgba(@black, 0.6);
+    }
+  }
+}
+
+.list-catalog__checkbox[type="checkbox"]:checked:focus ~ .list-catalog__description::before,
+.list-catalog__checkbox[type="checkbox"]:checked:hover ~ .list-catalog__description::before {
+  background-color: @white;
 }
 
 .list-catalog__checkbox[type="checkbox"]:active ~ .list-catalog__description::before {

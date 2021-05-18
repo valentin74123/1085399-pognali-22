@@ -11,6 +11,7 @@
   margin-top: -30px;
 
   z-index: 2;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 74px;
@@ -31,6 +32,26 @@
 
   text-transform: uppercase;
   .margin();
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+    width: 15px;
+    height: 10px;
+    background: url("../img/filter.svg") no-repeat;
+    fill: @blue3;
+
+    @media (min-width: @tablet-width) {
+      left: -45px;
+      width: 23px;
+      height: 15px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -99,36 +120,60 @@
 }
 
 .country-filter__uncover {
-  // display: none;
-  width: 17px;
-  height: 3px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: @blue3;
 
+  text-transform: uppercase;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 17px;
+    height: 3px;
+    background-image: url("../img/dots.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      right: -50px;
+      width: 30px;
+      height: 6px;
+    }
+  }
+
+  span {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     font-family: "Blogger Sans", "Arial", sans-serif;
-    display: block;
+
+    span {
+      display: block;
+    }
+
     width: auto;
     height: auto;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    color: @blue3;
-
-    text-transform: uppercase;
-    border: none;
-    background-color: inherit;
     margin-right: 60px;
-
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }
 
@@ -165,5 +210,30 @@
 .country-filter--opened .country-filter__list {
   @media (min-width: @tablet-width) {
     display: flex;
+  }
+}
+
+.country-filter--opened .country-filter__uncover {
+  position: absolute;
+  top: 58px;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  &::after {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/filter-close.svg");
+    background-repeat: no-repeat;
+    filter: invert(90%) sepia(40%) saturate(5470%) hue-rotate(197deg) brightness(55%) contrast(96%);
+
+    @media (min-width: @tablet-width) {
+      width: 22px;
+      height: 24px;
+    }
   }
 }

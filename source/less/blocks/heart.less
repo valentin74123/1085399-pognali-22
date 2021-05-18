@@ -13,6 +13,11 @@
   cursor: pointer;
   width: 31px;
   height: 31px;
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .heart__description::before {
@@ -24,15 +29,31 @@
   height: 31px;
   z-index: 1;
   border-radius: 50px;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: 12px 11px;
-  background-position: center;
+
   background-color: @light-gray6;
 
 
   @media (min-width: @tablet-width) {
-    top: -10px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.heart__description::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 31px;
+  height: 31px;
+  z-index: 2;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 11px;
+  background-position: center;
+
+
+  @media (min-width: @tablet-width) {
     width: 50px;
     height: 50px;
     background-size: 20px 20px;
@@ -40,27 +61,38 @@
 }
 
 .heart__checkbox[type="checkbox"]:checked ~ .heart__description::before {
-  opacity: 1;
-  background-image: url("");
   background-color: @light-pink;
+}
+
+.heart__checkbox[type="checkbox"]:checked ~ .heart__description::after {
+  opacity: 1;
+  background-image: url("../img/heart-active.svg");
 }
 
 .heart__checkbox[type="checkbox"]:checked:focus ~ .heart__description::before,
 .heart__checkbox[type="checkbox"]:checked:hover ~ .heart__description::before {
   background-color: @light-pink2;
+}
+
+.heart__checkbox[type="checkbox"]:checked:focus ~ .heart__description::after,
+.heart__checkbox[type="checkbox"]:checked:hover ~ .heart__description::after {
   opacity: 1;
 }
 
 .heart__checkbox[type="checkbox"]:checked:active ~ .heart__description::before {
+  background-color: @light-pink2;
+}
+
+.heart__checkbox[type="checkbox"]:checked:active ~ .heart__description::after {
   opacity: 0.3;
 }
 
-.heart__checkbox[type="checkbox"]:focus ~ .heart__description::before,
-.heart__checkbox[type="checkbox"]:hover ~ .heart__description::before {
+.heart__checkbox[type="checkbox"]:focus ~ .heart__description::after,
+.heart__checkbox[type="checkbox"]:hover ~ .heart__description::after {
   opacity: 0.5;
 }
 
-.heart__checkbox[type="checkbox"]:active ~ .heart__description::before {
+.heart__checkbox[type="checkbox"]:active ~ .heart__description::after {
   opacity: 0.1;
 }
 
@@ -78,6 +110,7 @@
   order: 2;
 
   @media (min-width: @tablet-width) {
+    width: 70px;
     font-size: 20px;
     line-height: 20px;
     margin-left: 20px;
