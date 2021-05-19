@@ -10,11 +10,14 @@
   line-height: 20px;
   color: @white;
   text-align: center;
+
   background: @dark-blue4;
   border-radius: 4px;
-  position: relative;
 
-  padding: 18px 21px;
+  padding: 18px 18px;
+  z-index: 2;
+
+  position: absolute;
 
   &::before {
     position: absolute;
@@ -29,26 +32,9 @@
 }
 
 .transpotrs-hover:hover .transpotrs-hover__hover-description {
-  display: inline-block;
-  position: absolute;
-  top: 35px;
-
-  z-index: 2;
-
-
-  &--plane {
-    left: -48px;
-  }
-
-  &--bus {
-    left: -55px;
-  }
-
-  &--bike {
-    left: -40px;
-  }
-
-  &--run {
-    left: -30px;
-  }
+  display: block;
+  width: 110px;
+  top: 110%;
+  left: 50%;
+  margin-left: -70px;
 }
