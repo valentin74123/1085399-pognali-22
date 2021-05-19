@@ -18,13 +18,18 @@
   z-index: 2;
 
   position: absolute;
+  width: 110px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
 
   &::before {
     position: absolute;
     content: "";
     top: -5px;
-    right: 45%;
-    transform: translateX(-45%) rotate(45deg);
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
     width: 10px;
     height: 10px;
     background-color: @dark-blue4;
@@ -33,8 +38,4 @@
 
 .transpotrs-hover:hover .transpotrs-hover__hover-description {
   display: block;
-  width: 110px;
-  top: 110%;
-  left: 50%;
-  margin-left: -70px;
 }
