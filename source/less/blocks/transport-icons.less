@@ -1,16 +1,36 @@
 .transport-icons {
-  .list();
-  display: flex;
-  align-items: center;
+  padding: 0;
+  list-style: none;
+
+  &--index .transport-icons__icon-wrapper {
+    background-color: inherit;
+  }
 }
 
-.transport-icons__icon {
+.transport-icons__icon-wrapper {
   background-color: @light-gray;
   border-radius: 50%;
   width: 32px;
   height: 32px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
     background-color: inherit;
+  }
+}
+
+.transport-icons__icon {
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+
+  fill: rgba(@blue3, 0.15);
+
+  &--active {
+    fill: @blue3;
   }
 }

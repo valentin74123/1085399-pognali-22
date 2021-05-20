@@ -1,0 +1,49 @@
+.button-close {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: rgba(@black, 0.1);
+
+  &:hover,
+  &:focus {
+    fill: rgba(@black, 0.3);
+  }
+
+  &:active {
+    fill: rgba(@black, 0.05);
+  }
+
+  border-radius: 50%;
+  filter: opacity(1);
+  background-color: @light-gray;
+
+  @media (min-width: @tablet-width) {
+    top: 45%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 21px;
+    background-color: inherit;
+  }
+
+  &--choose-country {
+    @media (min-width: @desktop-width) {
+      right: -270px;
+    }
+  }
+}
+
+.button-close__svg {
+  @media (min-width: @tablet-width) {
+    transform: scale(2);
+  }
+}

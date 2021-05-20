@@ -11,7 +11,7 @@
   @media (min-width: @tablet-width) {
     padding: 33px 25px 25px 33px;
 
-    grid-template-columns: 226px 150px 50px 50px auto;
+    grid-template-columns: 226px 150px 50px 55px auto;
     column-gap: normal;
     grid-template-rows: repeat(5, auto);
   }
@@ -19,7 +19,7 @@
   @media (min-width: @desktop-width) {
     padding: 42px 43px 42px 0;
 
-    grid-template-columns: 347px 150px 50px 50px auto 60px;
+    grid-template-columns: 347px 150px 50px 55px auto 60px;
     grid-template-rows: repeat(3, auto);
 
     position: relative;
@@ -279,7 +279,7 @@
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 3;
-    margin-left: 79px;
+    margin-left: 74px;
   }
 }
 
@@ -337,7 +337,15 @@
 }
 
 .travelers-profile__transpotrs-list {
+  display: flex;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
+    height: 50px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 16px;
+
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 1;
@@ -345,11 +353,13 @@
   }
 
   @media (min-width: @desktop-width) {
+    flex-direction: row;
+    margin-left: 74px;
+
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin-left: 79px;
   }
 }
 

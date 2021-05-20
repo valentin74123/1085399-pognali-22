@@ -10,17 +10,25 @@
   line-height: 20px;
   color: @white;
   text-align: center;
+
   background: @dark-blue4;
   border-radius: 4px;
-  position: relative;
 
-  padding: 18px 21px;
+  padding: 18px 18px;
+  z-index: 2;
+
+  position: absolute;
+  width: 110px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
 
   &::before {
     position: absolute;
     content: "";
     top: -5px;
-    right: 50%;
+    left: 50%;
     transform: translateX(-50%) rotate(45deg);
     width: 10px;
     height: 10px;
@@ -30,25 +38,4 @@
 
 .transpotrs-hover:hover .transpotrs-hover__hover-description {
   display: block;
-  position: absolute;
-  top: 35px;
-
-  z-index: 2;
-
-
-  &--plane {
-    left: -48px;
-  }
-
-  &--bus {
-    left: -55px;
-  }
-
-  &--bike {
-    left: -40px;
-  }
-
-  &--run {
-    left: -30px;
-  }
 }

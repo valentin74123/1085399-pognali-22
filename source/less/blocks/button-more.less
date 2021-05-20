@@ -11,4 +11,29 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: @blue2;
+
+  &:hover,
+  &:focus {
+    fill-opacity: 0.6;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+}
+
+.button-more__svg {
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 26px;
+    height: 26px;
+    margin-right: 25px;
+  }
 }

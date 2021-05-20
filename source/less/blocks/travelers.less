@@ -331,11 +331,15 @@
 }
 
 .travelers__transpotrs-list {
-  .list();
+  display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 5;
 }
 
 .travelers__to-all {
+  .button-with-triangle-arrow();
+
   @media (min-width: @desktop-width) {
     .margin();
     width: 280px;

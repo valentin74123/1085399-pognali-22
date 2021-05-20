@@ -17,6 +17,9 @@
 
   position: relative;
 
+  background: url("../img/dropdown-form.svg") no-repeat right 15px center;
+  background-size: 12px 8px;
+
   &::before {
     position: absolute;
     content: "";
@@ -43,22 +46,15 @@
   &::after {
     position: absolute;
     content: "";
-    top: -10px;
-    right: -10px;
-    width: 21px;
-    height: 21px;
-    border: none;
-    background: url("");
+    top: 45px;
+    right: 45px;
+    width: 8px;
+    height: 11px;
+    background: url("../img/small-arrow.svg") no-repeat;
 
-    border-radius: 50%;
-    filter: opacity(1);
-    background-color: @light-gray;
 
     @media (min-width: @tablet-width) {
-      top: 50%;
-      transform: translateY(-50%);
-      right: -150px;
-      background-color: initial;
+      display: none;
     }
   }
 
@@ -67,6 +63,9 @@
 
     grid-column-start: 1;
     grid-column-end: 2;
+
+    background: url("../img/dropdown-form.svg") no-repeat right 27px center;
+    background-size: 16px 11px;
   }
 }
 
@@ -93,8 +92,6 @@
 
     grid-column-start: 1;
     grid-column-end: 3;
-
-    // position: relative;
 
     &::before {
       position: absolute;
@@ -239,13 +236,16 @@
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 
+  background-image: url("../img/filter-close.svg");
+  background-repeat: no-repeat;
+
   @media (min-width: @tablet-width) {
     padding: 24px 24px;
   }
 }
 
 .choose-country--opened .choose-country__button::before,
-.choose-country--opened .choose-country__button::after {
+.choose-country--opened .countries__button-close {
   display: none;
 
   @media (min-width: @tablet-width) {

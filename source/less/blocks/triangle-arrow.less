@@ -1,0 +1,27 @@
+.triangle-arrow {
+  fill: currentColor;
+  width: 14px;
+  height: 13px;
+
+  &--reg {
+    width: 14px;
+    height: 16px;
+  }
+
+  &--form-right,
+  &--form-left {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+
+  &--form-right {
+    padding-left: 10px;
+  }
+
+  &--form-left {
+    padding-right: 10px;
+  }
+}

@@ -148,6 +148,8 @@
   z-index: 5;
   margin-left: -14px;
 
+  .button-with-triangle-arrow();
+
   span {
     display: none;
 
@@ -156,15 +158,24 @@
     }
   }
 
+  svg {
+    padding-left: 8px;
+  }
+
   @media (min-width: @tablet-width) {
     min-width: 80px;
     min-height: 80px;
     border-radius: 20px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+
+    svg {
+      padding-left: 10px;
+    }
   }
 
   @media (min-width: @desktop-width) {
+    .button-with-triangle-arrow();
     min-width: 330px;
     min-height: 80px;
   }
