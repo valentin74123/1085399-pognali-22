@@ -16,11 +16,11 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-top: 185px;
+    padding-top: 180px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 46px;
+    padding-top: 45px;
     padding-bottom: 11px;
     display: flex;
     justify-content: space-between;
@@ -43,9 +43,10 @@
   background-color: inherit;
   cursor: pointer;
   border: none;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
-    top: 40px;
+    top: 47px;
     right: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -59,14 +60,19 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 13px;
+  right: 0;
   width: 25px;
   height: 3px;
   background-color: @white;
   box-shadow: 0 8px 0 0 @white;
   border-radius: 1.5px;
+
+  @media (min-width: @tablet-width) {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -85,11 +91,16 @@
     content: "";
     position: absolute;
     top: 24px;
-    left: 14px;
+    right: 0;
     width: 24px;
     height: 2px;
     background-color: @dark-gray2;
     border-radius: 1.5px;
+
+    @media (min-width: @tablet-width) {
+      right: auto;
+      left: 14px;
+    }
   }
 
   &::before {
@@ -130,6 +141,11 @@
 
   .main-nav--closed .main-nav__wrapper {
     padding-top: 0;
+  }
+
+  .main-nav--closed .users-links__login {
+    font-weight: bold;
+    letter-spacing: normal;
   }
 
 

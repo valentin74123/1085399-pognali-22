@@ -12,8 +12,8 @@
   @media (min-width: @tablet-width) {
     background-color: @dark-blue2;
     background-image: url("../img/globe-back-tablet@1x.jpg");
-    background-size: 100% 612px;
-    background-position: center 382px;
+    background-size: 200% 612px;
+    background-position: left -380px top 382px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/globe-back-tablet@2x.jpg");
@@ -23,8 +23,8 @@
   @media (min-width: @desktop-width) {
     background-color: @dark-blue3;
     background-image: url("../img/globe-back-desktop@1x.jpg");
-    background-size: 100% 750px;
-    background-position: center top -98px;
+    background-size: 125% 750px;
+    background-position: left -180px top -105px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/globe-back-desktop@2x.jpg");
@@ -34,24 +34,25 @@
 
 .information__wrapper {
   .wrapper();
-  padding-top: 94px;
+  padding-top: 91px;
+  padding-bottom: 39px;
 
   background-image: url("../img/traveller-illustration-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 192px 255px;
-  background-position: 70px 223px;
+  background-position: 55px 223px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/traveller-illustration-mobile@2x.png");
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 162px;
+    padding-top: 160px;
     width: 688px;
 
     background-image: url("../img/traveller-illustration-tablet@1x.png");
     background-size: 372px 451px;
-    background-position: 245px 407px;
+    background-position: 245px 405px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/traveller-illustration-tablet@2x.png");
@@ -60,12 +61,12 @@
 
   @media (min-width: @desktop-width) {
     .wrapper();
-    padding-top: 110px;
+    padding-top: 95px;
     padding-bottom: 123px;
 
     background-image: url("../img/traveller-illustration-desktop@1x.png");
     background-size: 431px 640px;
-    background-position: 545px 12px;
+    background-position: 545px 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/traveller-illustration-desktop@2x.png");
@@ -82,7 +83,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 101px;
+    margin-bottom: 104px;
 
     display: grid;
     grid-template-columns: 488px 548px 264px;
@@ -97,6 +98,9 @@
   line-height: 40px;
   color: @white;
 
+  max-width: 238px;
+  margin: 0 auto;
+
   margin-bottom: 313px;
   text-align: center;
 
@@ -104,13 +108,13 @@
     font-size: 60px;
     line-height: 70px;
     max-width: 400px;
-    margin: 0 auto;
     margin-bottom: 86px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    .margin();
+    text-align: left;
+    margin-left: 68px;
 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -137,7 +141,8 @@
 
   @media (min-width: @desktop-width) {
     margin-left: auto;
-    margin-bottom: 45px;
+    margin-bottom: 37px;
+    margin-top: 13px;
 
     grid-column-start: 3;
     grid-column-end: 4;
@@ -197,6 +202,7 @@
 
 .information__item {
   width: auto;
+  max-width: 270px;
   min-height: 36px;
   border-radius: 10px;
   margin: 0 auto;
@@ -219,7 +225,8 @@
   @media (min-width: @tablet-width) {
     min-height: 48px;
     margin: 0;
-    padding: 31px 100px 61px 32px;
+    padding: 28px 100px 64px 32px;
+    border-radius: 20px;
 
     &::before {
       top: 88px;
@@ -237,8 +244,8 @@
       top: 29px;
       left: auto;
       right: 63px;
-      font-size: 30px;
-      line-height: 30px;
+      font-size: 24px;
+      line-height: 24px;
     }
   }
 }
@@ -249,7 +256,7 @@
   @media (min-width: @tablet-width) {
     margin-left: auto;
     padding-right: 122px;
-    margin-right: -24px;
+    margin-right: -35px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -267,8 +274,10 @@
 
 .information__item:nth-child(4n + 2) {
   background-color: @orange-light;
+  margin-top: -10px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -286,11 +295,13 @@
 
 .information__item:nth-child(4n + 3) {
   background-color: @yellow-dark;
+  margin-top: -10px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 0;
     margin-left: auto;
     padding-right: 122px;
-    margin-right: -24px;
+    margin-right: -35px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }
@@ -308,8 +319,11 @@
 
 .information__item:nth-child(4n + 4) {
   background-color: @yellow;
+  margin-top: -10px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 0;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }

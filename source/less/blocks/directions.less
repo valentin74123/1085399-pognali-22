@@ -5,12 +5,12 @@
 }
 
 .directions__wrapper {
-  padding: 100px 0 35px 0;
+  padding: 98px 0 35px 0;
   .wrapper();
   margin-top: -30px;
 
   @media (min-width: @tablet-width) {
-    padding: 149px 0 80px 0;
+    padding: 145px 0 80px 0;
     margin-top: -76px;
   }
 
@@ -30,6 +30,7 @@
     @media (min-width: @tablet-width) {
       position: absolute;
       content: "";
+      top: 155px;
       right: -36px;
       width: 288px;
       height: 574px;
@@ -54,7 +55,7 @@
   margin-bottom: 60px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 104px;
+    margin-bottom: 106px;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,10 +69,10 @@
 }
 
 .directions__main-title {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
@@ -93,7 +94,7 @@
   @media (min-width: @tablet-width) {
     font-size: 28px;
     line-height: 33px;
-    max-width: 378px;
+    max-width: 350px;
   }
 
   @media (min-width: @desktop-width) {
@@ -104,6 +105,10 @@
 .directions__list {
   .list();
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
@@ -147,10 +152,10 @@
     .margin();
     width: auto;
     display: grid;
-    grid-template-columns: 432px 184px;
+    grid-template-columns: 434px 184px;
     grid-template-rows: 1fr;
 
-    margin-bottom: 11px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: @desktop-width) {
@@ -192,12 +197,18 @@
     left: auto;
     right: 150px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 23px;
+    right: 152px;
+  }
 }
 
 .directions__info {
   position: relative;
   background-color: @white;
   padding: 25px 24px;
+  padding-top: 24px;
   border-radius: 10px;
   margin-top: -10px;
 
@@ -205,7 +216,7 @@
   @media (min-width: @tablet-width) {
     margin-top: 0;
     max-width: 432px;
-    padding: 30px 205px 20px 26px;
+    padding: 28px 205px 20px 30px;
     border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -215,6 +226,31 @@
     grid-row-start: 1;
     grid-row-end: 2;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 105px 20px 30px;
+  }
+}
+
+.directions__item:nth-child(3) .directions__info {
+  padding-bottom: 6px;
+  padding-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+
+    .directions__description {
+      max-width: 132px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 22px;
+
+    .directions__description {
+      max-width: none;
+    }
+  }
 }
 
 .directions__title {
@@ -223,6 +259,8 @@
   font-size: 21px;
   line-height: 21px;
   color: @black;
+
+  margin-bottom: 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 24px;
@@ -238,35 +276,74 @@
   line-height: 18px;
   color: rgba(@dark-gray, 0.3);
 
+  max-width: 140px;
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    min-width: 168px;
+    max-width: 168px;
     min-height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 25px;
+    margin-bottom: 17px;
+    max-width: 400px;
   }
 }
 
 .directions__people {
   .text();
+  font-weight: 500;
+  position: absolute;
+  top: 27px;
+  right: 25px;
   color: rgba(@blue, 0.3);
 
   @media (min-width: @tablet-width) {
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
+
+    position: relative;
+    left: 32px;
+    top: 0;
+    right: auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -17px;
+    width: 10px;
+    height: 12px;
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    opacity: 0.1;
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+      left: -32px;
+      width: 18px;
+      height: 20px;
+    }
   }
 }
 
 .directions__to-all {
   margin: 0 auto;
+  padding-left: 22px;
   .button-with-triangle-arrow();
 
   @media (min-width: @tablet-width) {
+    padding-left: 32px;
     .margin();
   }
 
   @media (min-width: @desktop-width) {
-    width: 275px;
+    width: 210px;
+    padding-right: 36px;
     margin: 0;
     align-self: flex-end;
 

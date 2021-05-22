@@ -187,6 +187,67 @@
         </div>
       </section>
 
+      <section class="second-menu">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+
+              <source media="(min-width: 1440px)"  srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <img class="page-header__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="15" alt="Логотип «Погнали»">
+            </picture>
+          </a>
+          <nav class="main-nav main-nav--opened">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a class="non-link-decoration">О сервисе</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html" class="non-link-decoration">Направления</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="catalog.html" class="non-link-decoration">Попутчики</a>
+                </li>
+              </ul>
+
+              <ul class="main-nav__list users-links users-links--main-nav">
+                <li class="users-links__item users-links__item--authorization">
+                  <a class="users-links__login js-login non-link-decoration button-yellow button-yellow--login-nav" href="login.html">
+                    Авторизация
+                  </a>
+                </li>
+
+                <li class="users-links__item">
+                  <a class="users-links__info users-links__info--tel users-links__info--main-nav" href="tel:88005558628">
+                    <div class="users-links__icons">
+                      <svg class="users-links__icon-topmenu" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-topmenu-phone"></use>
+                      </svg>
+                    </div>
+                    <span>8 800 555-86-28</span>
+                  </a>
+                </li>
+
+                <li class="users-links__item">
+                  <a class="users-links__info users-links__info--mail users-links__info--main-nav" href="mailto:mail@htmlacademy.ru">
+                    <div class="users-links__icons">
+                      <svg class="users-links__icon-topmenu" width="16" height="14">
+                        <use xlink:href="img/sprite.svg#icon-topmenu-mail"></use>
+                      </svg>
+                    </div>
+                    <span>mail@htmlacademy.ru</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+
       <section class="about">
         <div class="about__wrapper">
           <div class="about__text-wrapper">
@@ -209,7 +270,7 @@
         <div class="directions__wrapper">
           <div class="directions__text-wrapper">
             <h2 class="directions__main-title text-title non-margin">Направления</h2>
-            <p class="directions__text non-margin">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <p class="directions__text non-margin">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           </div>
           <ul class="directions__list">
             <li class="directions__item">
@@ -283,7 +344,7 @@
         <div class="travelers__wrapper">
           <div class="travelers__text-wrapper">
             <h2 class="travelers__title text-title non-margin">Попутчики</h2>
-            <p class="travelers__description non-margin">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а<span>&nbsp;</span>другому маршрут для хайкинга.</p>
+            <p class="travelers__description non-margin">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.</p> <!--<span>&nbsp;</span>-->
             <p class="travelers__description travelers__description--bold non-margin">Теперь можно легко найти единомышленников!</p>
           </div>
           <ul class="travelers__list">
@@ -314,7 +375,7 @@
               </div>
 
               <div class="travelers__info">
-                <h3 class="travelers__name non-margin">Таня Фрисова</h3>
+                <h3 class="travelers__name non-margin">Таня Фирсова</h3>
                 <p class="travelers__hashtags non-margin">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
 
                 <ul class="travelers__transpotrs-list transport-icons transport-icons--index">
@@ -459,7 +520,9 @@
               <p class="add-profile__price non-margin">99 руб./мес</p>
             </li>
             <li class="add-profile__item">
-              <p class="add-profile__description non-margin">Кастомный цвет карточки</p>
+              <div class="add-profile__item-bottom-line">
+                <p class="add-profile__description non-margin">Кастомный цвет карточки</p>
+              </div>
               <p class="add-profile__price non-margin">59 руб./мес</p>
             </li>
           </ol>
@@ -479,7 +542,7 @@
       <section class="invite-form">
         <div class="invite-form__wrapper">
           <h2 class="invite-form__title text-title non-margin">Заинтересовались?</h2>
-          <p class="invite-form__description non-margin">Зарегистрируйтесь,<br> это быстро и бесплатно!<br> Уже зарегистрированы? Тогда<br> скорее <a href="">авторизуйтесь</a>.</p>
+          <p class="invite-form__description non-margin">Зарегистрируйтесь,<br> это быстро и бесплатно!<br> Уже зарегистрированы? Тогда<br>&nbsp; скорее <a href="">авторизуйтесь</a>.</p>
           <form class="invite-form__email" action="https://echo.htmlacademy.ru" method="POST">
             <input class="invite-form__email-input" type="email" name="email" placeholder="E-mail" required>
             <button class="invite-form__button button-index button-index--reg" type="submit">
@@ -489,7 +552,7 @@
               </svg>
             </button>
           </form>
-          <p class="invite-form__questions non-margin">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+          <p class="invite-form__questions non-margin">Остались вопросы?<br>&nbsp; Мы с радостью на них ответим!</p>
           <div class="users-links users-links--form">
             <a class="users-links__info users-links__info--form" href="tel:88005558628">
               <article class="users-links__icons users-links__icons--form">
@@ -614,7 +677,9 @@
             <p class="business-tariff__text non-margin">от 20 коп./лайк</p>
           </li>
           <li class="business-tariff__item">
-            <p class="business-tariff__text non-margin">Ваш продакт-плейсмент</p>
+            <div class="business-tariff__item-bottom-line">
+              <p class="business-tariff__text non-margin">Ваш продакт-плейсмент</p>
+            </div>
             <p class="business-tariff__text non-margin">Индивидуально</p>
           </li>
         </ul>

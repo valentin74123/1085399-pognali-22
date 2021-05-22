@@ -1,7 +1,7 @@
 .business-tariff {
   position: fixed;
   display: none;
-  top: 60px;
+  top: 75px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -10,6 +10,7 @@
   background-color: @white;
   margin: 0 auto;
   border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
 
   @media (min-width: @tablet-width) {
     width: 688px;
@@ -17,6 +18,9 @@
 
   @media (min-width: @desktop-width) {
     width: 750px;
+    left: 53%;
+    transform: translateX(-53%);
+    border-radius: 30px;
   }
 }
 
@@ -24,19 +28,19 @@
   padding-top: 34px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 54px;
+    padding-top: 52px;
   }
 }
 
 .business-tariff__title {
   max-width: 170px;
   margin: 0 auto;
-  margin-bottom: 39px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     max-width: none;
     text-align: center;
-    margin-bottom: 61px;
+    margin-bottom: 49px;
   }
 }
 
@@ -98,6 +102,28 @@
   }
 }
 
+.business-tariff__item-bottom-line {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -11px;
+    left: 0;
+    width: 219px;
+    height: 1px;
+    background-color: @light-gray9;
+
+    @media (min-width: @tablet-width) {
+      width: 506px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 630px;
+    }
+  }
+}
+
 .business-tariff__button {
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
@@ -114,15 +140,23 @@
 
   display: flex;
   justify-content: center;
-  margin-top: 34px;
+  margin-top: 43px;
   padding: 21px 0;
   width: 100%;
 
   @media (min-width: @tablet-width) {
     font-size: 24px;
     line-height: 24px;
-    padding: 41px 0;
+    padding-top: 39px;
+    padding-bottom: 43px;
     text-transform: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 42px;
+    padding-bottom: 44px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 
   &:hover,
