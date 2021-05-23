@@ -1,13 +1,18 @@
 .months {
   border-bottom: 1px solid @gray2;
   border-top: 1px solid @gray2;
-  padding: 11px 0;
+  padding: 10px 0;
   min-height: 22px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 23px;
-    padding-top: 27px;
+    padding-top: 36px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 37px;
+    padding-bottom: 26px;
   }
 }
 
@@ -41,11 +46,41 @@
   transform: translateY(-50%);
 
   &--prev {
-    left: 0;
+    left: -8px;
   }
 
   &--next {
-    right: 0;
+    right: -8px;
+  }
+
+  @media (min-width: @tablet-width) {
+    svg {
+      width: 29px;
+      height: 36px;
+    }
+
+    &--prev {
+      left: 8px;
+    }
+
+    &--next {
+      right: 8px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    svg {
+      width: 34px;
+      height: 30px;
+    }
+
+    &--prev {
+      left: -12px;
+    }
+
+    &--next {
+      right: -7px;
+    }
   }
 
   & path {

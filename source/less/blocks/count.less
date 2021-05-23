@@ -30,16 +30,19 @@
   transform: translateY(-50%);
 
   &--min {
-    left: 0;
+    left: -7px;
   }
 
   &--max {
-    right: 0;
+    right: -7px;
   }
 
   @media (min-width: @tablet-width) {
-    width: 20px;
-    height: 20px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
     margin: 0 23px;
   }
 }

@@ -4,8 +4,15 @@
   @media (min-width: @desktop-width) {
     display: block;
     .list();
+    margin-top: 6px;
     margin-left: auto;
-    margin-right: 45px;
+    margin-right: 53px;
+
+    &--two,
+    &--three {
+      margin-right: 46px;
+      margin-top: 11px;
+    }
   }
 }
 
@@ -23,8 +30,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 10px;
-    left: -36px;
+    top: 9px;
+    left: -41px;
     background-color: @blue3;
     width: 6px;
     height: 6px;

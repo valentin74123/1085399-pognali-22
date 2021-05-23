@@ -1,6 +1,8 @@
 .page-heading {
   background-color: @dark-blue2;
   .border-bottom();
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 
   &--catalog {
     z-index: 4;
@@ -8,16 +10,16 @@
 }
 
 .page-heading__inner {
-  padding-top: 95px;
+  padding-top: 93px;
   .wrapper();
 
 
   @media (min-width: @tablet-width) {
-    padding-top: 224px;
+    padding-top: 220px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 125px;
+    padding-top: 110px;
   }
 
   &--catalog {
@@ -35,7 +37,7 @@
   line-height: 36px;
   color: @white;
 
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   border-radius: 4px;
 
   position: relative;
@@ -54,7 +56,7 @@
     font-size: 60px;
     line-height: 60px;
 
-    padding-bottom: 62px;
+    padding-bottom: 70px;
 
     &::before {
       width: 358px;
@@ -74,6 +76,7 @@
 
   @media (min-width: @desktop-width) {
     .padding-form-page();
+    padding-bottom: 72px;
   }
 }
 

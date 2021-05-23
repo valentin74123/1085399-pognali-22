@@ -2,7 +2,7 @@
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 44px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
@@ -16,9 +16,9 @@
       position: absolute;
       content: "";
       top: 12px;
-      left: -16px;
+      left: -14px;
       width: 2px;
-      height: 301px;
+      height: 281px;
       background-color: @blue2;
     }
 
@@ -26,16 +26,29 @@
       &::before {
         top: 19px;
         left: auto;
-        right: 6px;
-        height: 274px;
+        right: 7px;
+        height: 272px;
       }
     }
 
     @media (min-width: @desktop-width) {
+      margin-bottom: 35px;
+
       &::before {
+        top: 22px;
         right: 226px;
-        height: 294px;
+        height: 274px;
       }
+    }
+  }
+
+  &--czech-republic {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 45px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 53px;
     }
   }
 }
@@ -51,7 +64,7 @@
     content: "";
     top: 50%;
     transform: translateY(-50%);
-    left: -8px;
+    left: -3px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -63,7 +76,7 @@
     content: "";
     top: 50%;
     transform: translateY(-50%);
-    left: -16px;
+    left: -14px;
     width: 11px;
     height: 2px;
     background-color: @blue2;
@@ -72,7 +85,7 @@
   @media (min-width: @tablet-width) {
     &::before {
       left: auto;
-      right: 0;
+      right: 1px;
       width: 14px;
       height: 14px;
     }
@@ -95,9 +108,10 @@
   font-weight: 500;
   color: @blue2;
 
-  margin-left: 8px;
+  margin-left: 10px;
 
   @media (min-width: @tablet-width) {
+    margin-left: 0;
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
@@ -113,10 +127,12 @@
     display: block;
 
     margin-right: 35px;
+    margin-top: 3px;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 116px;
+    margin-top: 8px;
   }
 }
 
@@ -130,9 +146,9 @@
 
   resize: none;
   margin-top: 14px;
-  height: 220px;
-  padding: 12px 27px 0 14px;
-  width: 177px;
+  height: 205px;
+  padding: 10px 17px 0 14px;
+  width: 187px;
 
   &:hover,
   &:focus {
@@ -158,10 +174,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 37px;
+    margin-top: 26px;
     padding: 26px;
     padding-top: 25px;
     padding-right: 19px;
     width: 684px;
+    height: 89px;
   }
 }

@@ -1,21 +1,32 @@
 .plans {
   background-color: @light-gray4;
   .border-top();
+
+  @media (min-width: @tablet-width) {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .border-top();
+  }
 }
 
 .plans__wrapper {
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 60px;
   .wrapper();
 
   @media (min-width: @tablet-width) {
-    padding-top: 57px;
+    margin-top: -15px;
+    padding-top: 55px;
     padding-bottom: 118px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 54px;
+    padding-top: 52px;
     padding-bottom: 121px;
+    margin-top: -10px;
   }
 }
 
@@ -31,11 +42,12 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
+  }
 
-    @media (min-width: @desktop-width) {
-      .padding-form-page();
-    }
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
+    margin-bottom: 53px;
   }
 }
 
@@ -48,11 +60,12 @@
 }
 
 .plans__item {
-  margin-bottom: 10px;
-  border-radius: 15px;
+  margin-bottom: 8px;
+  border-radius: 10px;
 
   @media (min-width: @tablet-width) {
     border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {

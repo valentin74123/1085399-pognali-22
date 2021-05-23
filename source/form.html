@@ -133,9 +133,9 @@
         <section class="profile-info">
           <div class="profile-info__wrapper">
             <div class="profile-info__level">
-              <div class="level">
+              <div class="level level--form">
                 <svg width="100" height="100">
-                  <circle class="level__circle" r="48" cx="50" cy="50" fill="transparent" stroke="#FF8D30" stroke-width="4"
+                  <circle class="level__circle level__circle--form" r="48" cx="50" cy="50" fill="transparent" stroke="#FF8D30" stroke-width="4"
                     stroke-dashoffset="20" stroke-dasharray="210 40" />
                 </svg>
                 <div class="level__info level__info--form">
@@ -223,7 +223,7 @@
             <ul class="add-plan__list steps">
               <li class="steps__item steps__item--one">
                 <div class="steps__wrapper steps__wrapper--one">
-                  <h3 class="steps__title steps__title--one non-margin" id="step-one">Шаг 1.<br> Даты пребывания</h3>
+                  <h3 class="steps__title steps__title--one non-margin" id="step-one">Шаг 1.&nbsp;<br> Даты пребывания</h3>
                   <p class="steps__info steps__info--one non-margin">
                     Укажите предпочтительное количество попутчиков, которых
                     вы хотели бы позвать в поездку и ее предполагаемую длительность.
@@ -261,7 +261,7 @@
                   <label class="steps__label steps__label--days" for="duration">Длительность:</label>
                   <p class="steps__denomination steps__denomination--days non-margin">Дн.</p>
 
-                  <div class="steps__count steps__count--days  count">
+                  <div class="steps__count steps__count--days count">
                     <input class="count__number" type="number" id="duration" name="duration" min="1" value="3">
 
                     <button class="count__button count__button--min" type="button">
@@ -360,7 +360,7 @@
                       <td class="calendar__date calendar__date--disabled">25</td>
                       <td class="calendar__date calendar__date--hover">
                         <input class="visually-hidden calendar__input" type="checkbox" id="26" checked>
-                        <label class="calendar__label" for="26" >26 <span>Заезд</span></label>
+                        <label class="calendar__label" for="26" >26<br> <span>Заезд</span></label>
                       </td>
                       <td class="calendar__date calendar__date--active">
                         <input class="visually-hidden calendar__input" type="checkbox" id="27" checked>
@@ -368,9 +368,9 @@
                       </td>
                       <td class="calendar__date calendar__date--active">
                         <input class="visually-hidden calendar__input" type="checkbox" id="28" checked>
-                        <label class="calendar__label" for="28" >28 <span>Выезд</span></label>
+                        <label class="calendar__label" for="28" >28<br> <span>Выезд</span></label>
                       </td>
-                      <td class="calendar__date calendar__date--active">
+                      <td class="calendar__date">
                         <input class="visually-hidden calendar__input" type="checkbox" id="29">
                         <label class="calendar__label" for="29" >29</label>
                       </td>
@@ -419,12 +419,12 @@
 
               <li class="steps__item steps__item--two">
                 <div class="steps__wrapper steps__wrapper--two">
-                  <h3 class="steps__title steps__title--two non-margin" id="step-two">Шаг 2.<br> Маршрут</h3>
-                  <p class="steps__info steps__info--two non-margin">Укажите страны, которые вы хотели посетить.
+                  <h3 class="steps__title steps__title--two non-margin" id="step-two">Шаг 2.&nbsp;<br> Маршрут</h3>
+                  <p class="steps__info steps__info--two non-margin">Укажите страны, которые вы хотели бы посетить.
                     Это может быть одна или сразу несколько.
                   </p>
 
-                  <ul class="steps__points-list steps__points-list--two points">
+                  <ul class="steps__points-list steps__points-list--two points points--two">
                     <li class="points__item">Даты</li>
                     <li class="points__item points__item--active">Маршрут</li>
                     <li class="points__item">Развлечения</li>
@@ -438,7 +438,7 @@
                       <img class="countries__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Босния">
                       <button class="countries__button-close button-close" type="button">
                         <svg class="button-close__svg" width="auto" height="9">
-                          <use xlink:href="img/sprite.svg#button-close"></use>
+                          <use xlink:href="img/sprite.svg#filter-close"></use>
                         </svg>
                         <span class="visually-hidden">Удалить страну из списка</span>
                       </button>
@@ -453,7 +453,7 @@
                       <img class="countries__flag" src="img/flag-czech.svg" width="35" height="24" alt="Чехия">
                       <button class="countries__button-close button-close" type="button">
                         <svg class="button-close__svg" width="auto" height="9">
-                          <use xlink:href="img/sprite.svg#button-close"></use>
+                          <use xlink:href="img/sprite.svg#filter-close"></use>
                         </svg>
                         <span class="visually-hidden">Удалить страну из списка</span>
                       </button>
@@ -465,7 +465,7 @@
                       Выберите страну
                       <button class="button-close button-close--choose-country" type="button">
                         <svg class="button-close__svg" width="auto" height="9">
-                          <use xlink:href="img/sprite.svg#button-close"></use>
+                          <use xlink:href="img/sprite.svg#filter-close"></use>
                         </svg>
                         <span class="visually-hidden">Удалить страну из списка</span>
                       </button>
@@ -622,12 +622,12 @@
 
               <li class="steps__item steps__item--three">
                 <div class="steps__wrapper steps__wrapper--three">
-                  <h3 class="steps__title steps__title--three non-margin" id="step-three">Шаг 3.<br> Развлечения</h3>
+                  <h3 class="steps__title steps__title--three non-margin" id="step-three">Шаг 3.&nbsp;<br> Развлечения</h3>
                   <p class="steps__info steps__info--three non-margin">Наконец, расскажите о своих планах времяпровождения.
                     Можно писать в свободной форме и ставить тэги.
                   </p>
 
-                  <ul class="steps__points-list steps__points-list--three points">
+                  <ul class="steps__points-list steps__points-list--three points points--three">
                     <li class="points__item">Даты</li>
                     <li class="points__item">Маршрут</li>
                     <li class="points__item points__item--active">Развлечения</li>
@@ -642,17 +642,17 @@
                     <textarea class="country__textarea country__textarea--bosnia" name="bosnia-entertainment" id="bosnia-entertainment" cols="30" rows="10" placeholder="План действий"></textarea>
                   </div>
 
-                  <div class="steps__country steps__country--czech-republic country">
+                  <div class="steps__country steps__country--czech-republic country country--czech-republic">
                     <div class="country__wrapper">
                       <label for="czech-republic-entertainment" class="country__name">Чехия</label>
                       <img class="country__flag" src="img/flag-czech.svg" width="35" height="24" alt="Чехия">
                     </div>
-                    <textarea class="country__textarea country__textarea--czech-republic" name="czech-republic-entertainment" id="czech-republic-entertainment" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                    <textarea class="country__textarea country__textarea--czech-republic" name="czech-republic-entertainment" id="czech-republic-entertainment" cols="30" rows="10">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                   </div>
 
                   <button class="steps__button steps__button--submit button-yellow button-yellow--submit" type="submit">
                     Отправить
-                    <svg class="triangle-arrow triangle-arrow--form" width="14" height="14">
+                    <svg class="triangle-arrow triangle-arrow--form-right" width="14" height="14">
                       <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
                     </svg>
                   </button>
@@ -671,7 +671,7 @@
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo-wrapper">
           <a class="page-footer__logo">

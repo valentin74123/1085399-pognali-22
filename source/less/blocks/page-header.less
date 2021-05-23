@@ -80,3 +80,44 @@
     display: block;
   }
 }
+
+.page-header--second-menu {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-color: @white;
+    z-index: 8;
+    position: relative;
+
+    .main-nav__wrapper {
+      padding-top: 16px;
+      padding-bottom: 19px;
+    }
+
+    .page-header__logo {
+      top: 22px;
+    }
+
+    .site-list {
+      &::before {
+        left: -89px;
+        width: 44px;
+        background-color: @blue3;
+      }
+    }
+
+    .site-list__item a {
+      color: @blue3;
+
+      &:hover,
+      &:focus {
+        color: @yellow;
+      }
+
+      &:active {
+        color: rgba(@yellow, 0.3);
+      }
+    }
+  }
+}

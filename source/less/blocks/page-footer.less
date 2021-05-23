@@ -2,6 +2,22 @@
   background-color: @white;
   .border-top();
   z-index: 2;
+
+  &--form {
+    .page-footer__logo-wrapper {
+      margin-bottom: 32px;
+
+      @media (min-width: @tablet-width) {
+        margin: 0;
+      }
+    }
+
+    .page-footer__wrapper {
+      @media (min-width: @tablet-width) {
+        padding: 47px 0 32px 0;
+      }
+    }
+  }
 }
 
 .page-footer__wrapper {
