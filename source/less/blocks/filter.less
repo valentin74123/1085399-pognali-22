@@ -6,36 +6,42 @@
 
   @media (min-width: @tablet-width) {
     .width-catalog-page();
+    margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
     width: 285px;
-    height: 775px;
+    height: 815px;
     margin: 0;
     margin-left: auto;
   }
 }
 
 .filter__wrapper {
-  padding-top: 26px;
+  padding-top: 23px;
   padding-bottom: 22px;
-  margin: 0 25px;
+  padding-left: 23px;
+  padding-right: 16px;
 
   @media (min-width: @tablet-width) {
     padding: 36px 35px;
+    padding-top: 34px;
+    padding-left: 34px;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 46px;
+    padding-top: 44px;
     padding-bottom: 48px;
+    padding-left: 47px;
+    padding-right: 40px;
   }
 }
 
 .filter__item-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -74,10 +80,11 @@
     font-size: 30px;
     line-height: 30px;
     max-width: none;
+    letter-spacing: normal;
 
     padding-bottom: 38px;
     border-bottom: 1px solid @yellow-dark2;
-    margin-bottom: 34px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
@@ -97,11 +104,32 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 26px;
+    margin: 0;
+    margin-bottom: 30px;
+
+    &--transport {
+      margin-top: -22px;
+      margin-bottom: 0;
+    }
+
+    &--level {
+      margin-top: -8px;
+      margin-bottom: 72px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
+
+    &--transport {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    &--level {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -139,9 +167,10 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    font-weight: 500;
 
     width: 105px;
-    margin-right: 22px;
+    margin-right: 14px;
 
     & span {
       display: inline;
@@ -158,6 +187,7 @@
 .filter__list-transports {
   .list();
   margin-bottom: 20px;
+  margin-top: 14px;
 }
 
 .filter__uncover {
@@ -171,4 +201,8 @@
   @media (min-width: @desktop-width) {
     display: block;
   }
+}
+
+.filter__button {
+  margin-left: -4px;
 }

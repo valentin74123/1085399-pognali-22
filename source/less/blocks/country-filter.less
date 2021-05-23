@@ -1,6 +1,9 @@
 .country-filter {
   background-color: @light-gray6;
   .border-bottom();
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   position: relative;
 
   // position: absolute;
@@ -12,7 +15,7 @@
 
 .country-filter__wrapper {
   padding-bottom: 17px;
-  padding-top: 50px;
+  padding-top: 52px;
   .wrapper();
   margin-top: -30px;
 
@@ -20,12 +23,16 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 74px;
-    padding-top: 184px;
+    padding-top: 187px;
     margin-top: -126px;
 
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 184px;
+    padding-bottom: 70px;
   }
 }
 
@@ -37,7 +44,7 @@
   color: @blue3;
 
   text-transform: uppercase;
-  .margin();
+  margin-left: 26px;
 
   position: relative;
 
@@ -153,14 +160,14 @@
     content: "";
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
+    right: 4px;
     width: 17px;
     height: 3px;
     background-image: url("../img/dots.svg");
     background-repeat: no-repeat;
 
     @media (min-width: @tablet-width) {
-      right: -50px;
+      right: -57px;
       width: 30px;
       height: 6px;
     }
@@ -179,7 +186,7 @@
 
     width: auto;
     height: auto;
-    margin-right: 60px;
+    margin-right: 123px;
   }
 }
 
