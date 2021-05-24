@@ -36,6 +36,30 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 34px;
+
+    & a {
+      height: 1em;
+      overflow: hidden;
+      padding: 0 4px;
+    }
+
+    & a span {
+      display: inline-block;
+      position: relative;
+      transition: transform 0.3s ease 0s;
+    }
+
+    & a span::before {
+      content: attr(data-hover);
+      position: absolute;
+      top: 100%;
+      transform: translate3d(0, 0, 0);
+    }
+
+    & a:hover span,
+    & a:focus span {
+      transform: translateY(-100%);
+    }
   }
 }
 
@@ -68,9 +92,15 @@
     line-height: 20px;
     color: @white;
 
+    position: relative;
+    display: inline-block;
+    outline: none;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+
     &:hover,
     &:focus {
       color: @yellow;
+      outline: none;
     }
 
     &:active {
