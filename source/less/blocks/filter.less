@@ -38,10 +38,10 @@
   }
 }
 
-.filter__item-wrapper {
-  display: flex;
-  justify-content: space-between;
+.filter__item-wrapper,
+.filter__uncover {
   margin-bottom: 10px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -136,6 +136,7 @@
 .filter__fieldset-wrapper {
   padding-top: 12px;
   border-top: 1px solid @yellow-dark2;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
@@ -193,12 +194,16 @@
 .filter__uncover {
   background-color: inherit;
   border: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 
   @media (min-width: @desktop-width) {
+    top: 0;
     display: block;
   }
 }
