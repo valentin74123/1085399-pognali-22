@@ -24,15 +24,34 @@
 
     position: relative;
   }
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+
+    .travelers-profile__avatar {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .travelers-profile__avatar-block {
+  border-radius: 50px;
+  display: inline-block;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
 
   @media (min-width: @tablet-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -40,14 +59,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: -42px;
-    margin-bottom: -46px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 285px;
+    height: 285px;
+    margin-top: -43px;
+    margin-bottom: -45px;
     margin-right: auto;
   }
 }
 
 .travelers-profile__avatar {
   border-radius: 50px;
+  // transition: 1s;
 
   @media (min-width: @tablet-width) {
     width: 190px;
