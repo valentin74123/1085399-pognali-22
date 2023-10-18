@@ -31,7 +31,6 @@
   .list();
 }
 
-
 .main-nav__toggle {
   position: absolute;
   top: 10px;
@@ -125,7 +124,6 @@
   }
 }
 
-
 @media (max-width: @tablet-width-only) {
   .main-nav--closed .site-list {
     display: none;
@@ -148,9 +146,8 @@
     letter-spacing: normal;
   }
 
-
   .main-nav--opened .site-list {
-    display: block;
+    display: flex;
   }
 
   .main-nav--opened .users-links--main-nav {
@@ -161,7 +158,6 @@
     display: flex;
   }
 
-
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
@@ -170,7 +166,6 @@
     position: static;
     min-height: 0;
   }
-
 
   @media (min-width: @tablet-width) {
     .main-nav--closed .users-links--main-nav {

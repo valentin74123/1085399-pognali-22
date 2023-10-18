@@ -1,3 +1,5 @@
+/* stylelint-disable selector-combinator-space-before */
+/* stylelint-disable indentation */
 .list-catalog {
   .list();
 
@@ -35,6 +37,8 @@
 .list-catalog__item {
   margin-left: 27px;
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     margin-left: 40px;
@@ -93,7 +97,7 @@
   content: "";
 
   @media (min-width: @tablet-width) {
-    top: 2px;
+    top: -4px;
     left: -36px;
     width: 24px;
     height: 24px;
@@ -108,15 +112,18 @@
   display: none;
 }
 
-.list-catalog__checkbox[type="checkbox"]:checked ~ .list-catalog__description::before {
+.list-catalog__checkbox[type="checkbox"]:checked
+  ~ .list-catalog__description::before {
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-size: 9px 9px;
   background-position: center;
 }
 
-.list-catalog__checkbox[type="checkbox"]:focus ~ .list-catalog__description::before,
-.list-catalog__checkbox[type="checkbox"]:hover ~ .list-catalog__description::before {
+.list-catalog__checkbox[type="checkbox"]:focus
+  ~ .list-catalog__description::before,
+.list-catalog__checkbox[type="checkbox"]:hover
+  ~ .list-catalog__description::before {
   background-color: rgba(@white, 0.6);
 
   .list-catalog__description {
@@ -127,12 +134,15 @@
   }
 }
 
-.list-catalog__checkbox[type="checkbox"]:checked:focus ~ .list-catalog__description::before,
-.list-catalog__checkbox[type="checkbox"]:checked:hover ~ .list-catalog__description::before {
+.list-catalog__checkbox[type="checkbox"]:checked:focus
+  ~ .list-catalog__description::before,
+.list-catalog__checkbox[type="checkbox"]:checked:hover
+  ~ .list-catalog__description::before {
   background-color: @white;
 }
 
-.list-catalog__checkbox[type="checkbox"]:active ~ .list-catalog__description::before {
+.list-catalog__checkbox[type="checkbox"]:active
+  ~ .list-catalog__description::before {
   opacity: 0.3;
   border: inherit;
   background-color: rgba(@white, 0.3);

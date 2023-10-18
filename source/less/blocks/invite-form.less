@@ -129,16 +129,15 @@
     border: 4px solid @white;
     background-color: inherit;
     color: @white;
+
+    &[type="email"]::placeholder {
+      color: @white;
+    }
   }
 }
 
 .invite-form__email-input[type="email"]::placeholder {
   color: rgba(@dark-gray, 0.3);
-
-  &:hover,
-  &:focus {
-    color: rgba(@dark-gray, 0.5);
-  }
 }
 
 .invite-form__button {

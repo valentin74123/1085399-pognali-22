@@ -1,5 +1,8 @@
 .site-list {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 134px;
@@ -11,13 +14,15 @@
     margin-bottom: 12px;
     margin-left: 345px;
     display: flex;
+    flex-direction: row;
+    column-gap: 34px;
 
     position: relative;
 
     &::before {
       position: absolute;
       content: "";
-      top: 50%;
+      top: 35%;
       transform: translateY(-50%);
       left: -105px;
       width: 60px;
@@ -35,8 +40,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 34px;
-
     & a {
       height: 1em;
       overflow: hidden;
